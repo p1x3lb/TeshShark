@@ -38,7 +38,7 @@ namespace Project.Scripts.Core
 
         private void OnGoalUpdated(GoalModel goal)
         {
-            _text.text = $"{goal.Current}/{goal.Target}";
+            _text.text = $"{goal.Target - goal.Current}";
             if (goal.IsCompleted)
             {
                 _text.gameObject.SetActive(false);

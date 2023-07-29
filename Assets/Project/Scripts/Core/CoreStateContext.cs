@@ -27,7 +27,7 @@ namespace Project.Scripts.Core
         private LevelListConfig LevelListConfig { get; }
 
         public LevelConfig Level => LevelListConfig.GetLevel(PlayerModel.PlayerLevel);
-        public int StepsLeft { get; set; }
+        public int StepsLeft { get; private set; }
         public CellView[,] Cells { get; private set; }
         public Transform Map { get; set; }
         public int Speed => Level.Speed;
@@ -73,7 +73,7 @@ namespace Project.Scripts.Core
             TurnsChanged?.Invoke(StepsLeft);
             if (StepsLeft <= 0)
             {
-                WindowManager.ShowWindow<TryAgainWindow>(new TryAgainWindowModel());
+                WindowManager.ShowWindow<TryAgainWindow>(new TryAgainWindowModel(this));
                 return false;
             }
 

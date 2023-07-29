@@ -156,7 +156,7 @@ namespace Project.Scripts.Infrastructure
         {
             IsLocked = true;
 
-            CoreStateContext.StepsLeft--;
+            CoreStateContext.ApplyTurn(1);
 
             await ProcessPlayerStep(ship, points);
             await ProcessShipsStep();

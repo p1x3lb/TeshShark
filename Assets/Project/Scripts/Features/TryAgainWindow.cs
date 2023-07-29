@@ -8,20 +8,23 @@ namespace Project.Scripts.Features
 {
     public class TryAgainWindowModel : WindowModel
     {
+        public CoreStateContext CoreStateContext { get; }
+
+        public TryAgainWindowModel(CoreStateContext coreStateContext)
+        {
+            CoreStateContext = coreStateContext;
+        }
     }
 
     public class TryAgainWindow : Window<TryAgainWindowModel>
     {
-        [Inject]
-        private CoreStateContext CoreStateContext { get; }
-
         [Inject]
         private WindowManager WindowManager { get; }
 
         [UsedImplicitly]
         public void OnTryAgain()
         {
-            CoreStateContext.ApplyTurn(-5);
+            Model.CoreStateContext.ApplyTurn(-5);
             Hide().Forget();
         }
 
