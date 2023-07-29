@@ -13,7 +13,7 @@ namespace Project.GameAssets.Core
         public override void InstallBindings()
         {
             Container.BindInterfacesAndSelfTo<CoreStateContext>().AsSingle();
-            Container.Bind<InputManager>().FromInstance(_inputManager).AsSingle();
+            Container.BindInterfacesAndSelfTo<InputManager>().FromInstance(_inputManager).AsSingle();
         }
     }
 }

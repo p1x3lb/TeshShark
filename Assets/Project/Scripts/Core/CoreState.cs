@@ -40,6 +40,7 @@ namespace Project.Scripts.Core
 
         public void Dispose()
         {
+            GoalsManager.Clear();
         }
     }
 }

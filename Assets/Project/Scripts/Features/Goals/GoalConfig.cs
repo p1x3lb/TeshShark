@@ -38,6 +38,11 @@ namespace Project.Scripts.Core
 
         }
 
+        protected virtual void OnComplete()
+        {
+            Dispose();
+        }
+
         protected void Fire()
         {
             _current++;
@@ -46,6 +51,7 @@ namespace Project.Scripts.Core
             if (_current == Aim)
             {
                 Complete?.Invoke(this);
+                OnComplete();
             }
         }
     }

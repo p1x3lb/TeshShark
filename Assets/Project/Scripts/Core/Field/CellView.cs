@@ -61,10 +61,5 @@ namespace Project.Scripts.Core
         {
             return (Position - last.Position).magnitude <= 1;
         }
-
-        public void ProcessClose()
-        {
-
-        }
     }
 }

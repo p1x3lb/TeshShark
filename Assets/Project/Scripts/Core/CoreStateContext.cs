@@ -20,6 +20,7 @@ namespace Project.Scripts.Core
         public int StepsLeft { get; set; }
         public IReadOnlyList<CellView> Cells { get; private set; }
         public int Speed => Level.Speed;
+        public int Damage => Level.Damage;
 
         public void Initialize(IReadOnlyList<CellView> cells)
         {

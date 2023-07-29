@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Threading;
+using Common.Scopes;
 using Cysharp.Threading.Tasks;
 using Project.Scripts.Core;
 using UnityEngine;
@@ -10,7 +11,7 @@ using Zenject;
 
 namespace Project.Scripts.Infrastructure
 {
-    public class InputManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
+    public class InputManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler, IDisposable, IInitializable
     {
         public event Action<int> RouteUpdated;
 
@@ -26,8 +27,21 @@ namespace Project.Scripts.Infrastructure
         private bool _selecting;
         private CellView _lastSelected;
         private readonly RaycastHit2D[] _results = new RaycastHit2D[5];
+        private CancellationTokenSource _cancellationTokenSource;
 
         public bool IsLocked { get; set; }
+
+        public void Initialize()
+        {
+            _cancellationTokenSource = new CancellationTokenSource();
+        }
+
+        public void Dispose()
+        {
+            _cancellationTokenSource.Cancel();
+            _cancellationTokenSource.Dispose();
+            _cancellationTokenSource = null;
+        }
 
         #region Input
 
@@ -148,11 +162,11 @@ namespace Project.Scripts.Infrastructure
         {
             for (var i = 1; i < points.Count; i++)
             {
-                await points[i].Travel(ship, default);
+                await points[i].Travel(ship, _cancellationTokenSource.Token);
 
-                foreach (var cell in CoreStateContext.Cells.Except(points).Where(cell => cell.IsClose(points[i])))
+                foreach (var cell in CoreStateContext.Cells.Except(points).Where(cell => cell.Content != null && cell.IsClose(points[i])))
                 {
-                    cell.ProcessClose();
+                    ship.Process(cell);
                 }
             }
 

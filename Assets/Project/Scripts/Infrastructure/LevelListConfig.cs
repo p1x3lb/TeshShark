@@ -27,15 +27,19 @@ namespace Project.Scripts.Infrastructure
         private int _speed = 5;
 
         [SerializeField]
+        private int _damage = 2;
+
+        [SerializeField]
         private GameObject _mapPrefab;
 
         [SerializeReference]
         private List<IGoal> _goalConfigs;
 
         public int StepCount => _stepCount;
+        public int Speed => _speed;
+        public int Damage => _damage;
 
         public GameObject MapPrefab => _mapPrefab;
-        public int Speed => _speed;
         public IReadOnlyList<IGoal> Goals => _goalConfigs;
     }
 }

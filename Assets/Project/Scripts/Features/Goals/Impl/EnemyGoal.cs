@@ -26,12 +26,17 @@ namespace Project.Scripts.Core.Goals
 
         protected override void OnInitialize()
         {
-            base.OnInitialize();
+            EnemyShipContent.Destroyed += OnDestroyed;
+        }
+
+        private void OnDestroyed()
+        {
+            Fire();
         }
 
         protected override void OnDispose()
         {
-            base.OnDispose();
+            EnemyShipContent.Destroyed -= OnDestroyed;
         }
     }
 }

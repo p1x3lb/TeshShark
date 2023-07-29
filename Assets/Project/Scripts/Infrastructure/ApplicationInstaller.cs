@@ -1,4 +1,5 @@
 ﻿using GameStateMachine.Project.Scripts.Modules.GameStateMachine;
+using Project.Scripts.Core;
 using Project.Scripts.Infrastructure;
 using UI;
 using UnityEngine;
@@ -22,6 +23,7 @@ namespace Project.GameAssets
             Container.BindInterfacesAndSelfTo<PlayerModel>().AsSingle();
             Container.Bind<LevelListConfig>().FromInstance(_levelListConfig).AsSingle();
             Container.Bind<UIConfig>().FromInstance(_uiConfig).AsSingle();
+            Container.BindInterfacesAndSelfTo<GoalsManager>().AsSingle();
         }
     }
 }
