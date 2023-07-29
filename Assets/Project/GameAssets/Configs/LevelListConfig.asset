@@ -18,9 +18,9 @@ MonoBehaviour:
     _damage: 2
     _columns: 6
     _rows: 6
-    _mapPrefab: {fileID: 470819381467398998, guid: 22fd7decbbc2f46ee970b6ee5e0014f8, type: 3}
+    _mapPrefab: {fileID: 470819381467398998, guid: d80972733543c4e2195f84a9b785b792, type: 3}
     _goalConfigs:
-    - rid: 3086543117426098177
+    - rid: 3086543117832159233
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -34,9 +34,9 @@ MonoBehaviour:
     _damage: 2
     _columns: 6
     _rows: 6
-    _mapPrefab: {fileID: 470819381467398998, guid: d80972733543c4e2195f84a9b785b792, type: 3}
+    _mapPrefab: {fileID: 470819381467398998, guid: 22fd7decbbc2f46ee970b6ee5e0014f8, type: 3}
     _goalConfigs:
-    - rid: 8122494385997742080
+    - rid: 3086543117426098177
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -132,7 +132,7 @@ MonoBehaviour:
       type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
         _toDefeat: 1
-    - rid: 8122494385997742080
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+    - rid: 3086543117832159233
+      type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
         _toDefeat: 1
