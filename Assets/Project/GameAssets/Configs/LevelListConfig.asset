@@ -28,7 +28,7 @@ MonoBehaviour:
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 7fc8173a9fda544a38453ffea9b3c2ca, type: 3}
     _goalConfigs:
-    - rid: 3086543117426098176
+    - rid: 3086543117832159234
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -36,31 +36,7 @@ MonoBehaviour:
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 22fd7decbbc2f46ee970b6ee5e0014f8, type: 3}
     _goalConfigs:
-    - rid: 3086543117426098177
-  - _stepCount: 15
-    _speed: 5
-    _damage: 2
-    _columns: 6
-    _rows: 6
-    _mapPrefab: {fileID: 470819381467398998, guid: d93666ac8ac9449e193bf2136cc60ba6, type: 3}
-    _goalConfigs:
-    - rid: 3086543117426098178
-  - _stepCount: 15
-    _speed: 5
-    _damage: 2
-    _columns: 6
-    _rows: 6
-    _mapPrefab: {fileID: 470819381467398998, guid: 37f9f155a3e7943ca82b3069f50e5567, type: 3}
-    _goalConfigs:
-    - rid: 3086543117426098179
-  - _stepCount: 15
-    _speed: 5
-    _damage: 2
-    _columns: 6
-    _rows: 6
-    _mapPrefab: {fileID: 470819381467398998, guid: 0dedc7d475ff14144a71f2b5b63b515d, type: 3}
-    _goalConfigs:
-    - rid: 3086543117426098180
+    - rid: 3086543117832159235
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -68,7 +44,34 @@ MonoBehaviour:
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: ee4a5295017a84bd1b1f718e4acfd783, type: 3}
     _goalConfigs:
-    - rid: 3086543117426098181
+    - rid: 3086543117832159240
+    - rid: 3086543117832159241
+    - rid: 3086543117832159242
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _columns: 6
+    _rows: 6
+    _mapPrefab: {fileID: 470819381467398998, guid: d93666ac8ac9449e193bf2136cc60ba6, type: 3}
+    _goalConfigs:
+    - rid: 3086543117832159236
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _columns: 6
+    _rows: 6
+    _mapPrefab: {fileID: 470819381467398998, guid: 37f9f155a3e7943ca82b3069f50e5567, type: 3}
+    _goalConfigs:
+    - rid: 3086543117832159237
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _columns: 6
+    _rows: 6
+    _mapPrefab: {fileID: 470819381467398998, guid: 0dedc7d475ff14144a71f2b5b63b515d, type: 3}
+    _goalConfigs:
+    - rid: 3086543117832159238
+    - rid: 3086543117832159239
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -77,6 +80,7 @@ MonoBehaviour:
     _mapPrefab: {fileID: 470819381467398998, guid: 6fb514cb0a02848aeaf3b68a7d7c35d2, type: 3}
     _goalConfigs:
     - rid: 3086543117426098182
+    - rid: 3086543117832159243
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -84,7 +88,7 @@ MonoBehaviour:
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 5ffdb3789d4d04cc3b41b2ef288ff730, type: 3}
     _goalConfigs:
-    - rid: 3086543117426098183
+    - rid: 3086543117832159245
   - _stepCount: 15
     _speed: 5
     _damage: 2
@@ -92,47 +96,63 @@ MonoBehaviour:
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: aaa26f89359ae4760934e80255cab7a7, type: 3}
     _goalConfigs:
-    - rid: 3086543117832159232
+    - rid: 3086543117832159244
   references:
     version: 2
     RefIds:
-    - rid: 3086543117426098176
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
-    - rid: 3086543117426098177
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
-    - rid: 3086543117426098178
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
-    - rid: 3086543117426098179
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
-    - rid: 3086543117426098180
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
-    - rid: 3086543117426098181
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
     - rid: 3086543117426098182
       type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
-        _toDefeat: 1
-    - rid: 3086543117426098183
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
-    - rid: 3086543117832159232
-      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
-      data:
-        _toDefeat: 1
+        _toDefeat: 4
     - rid: 3086543117832159233
       type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
         _toDefeat: 1
+    - rid: 3086543117832159234
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117832159235
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 3
+    - rid: 3086543117832159236
+      type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 4
+    - rid: 3086543117832159237
+      type: {class: TorchGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 3
+    - rid: 3086543117832159238
+      type: {class: FoodGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 3
+    - rid: 3086543117832159239
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 3
+    - rid: 3086543117832159240
+      type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 2
+    - rid: 3086543117832159241
+      type: {class: FoodGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 2
+    - rid: 3086543117832159242
+      type: {class: TorchGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 2
+    - rid: 3086543117832159243
+      type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117832159244
+      type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117832159245
+      type: {class: FoodGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 3
