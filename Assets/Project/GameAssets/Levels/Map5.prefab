@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 106797159779941035, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_Name
-      value: Map
+      value: Map5
       objectReference: {fileID: 0}
     - target: {fileID: 106797159779941036, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_RootOrder
@@ -17,11 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 106797159779941036, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 106797159779941036, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 106797159779941036, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_LocalPosition.z
