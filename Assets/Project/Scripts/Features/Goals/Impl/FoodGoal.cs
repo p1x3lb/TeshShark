@@ -17,11 +17,11 @@ namespace Project.Scripts.Core.Goals
 
     public class FoodGoalModel : GoalModel
     {
-        protected override int Aim { get; }
+        public override int Target { get; }
 
         public FoodGoalModel(int toDefeat)
         {
-            Aim = toDefeat;
+            Target = toDefeat;
         }
 
         protected override void OnInitialize()

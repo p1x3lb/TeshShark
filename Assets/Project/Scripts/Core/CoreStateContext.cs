@@ -2,20 +2,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using GameStateMachine.Modules.GameStateMachine;
+using Project.Scripts.Features;
 using Project.Scripts.Infrastructure;
+using UI;
 using Zenject;
 
 namespace Project.Scripts.Core
 {
     public class CoreStateContext : IGameStateContext
     {
-        public Action<int> HealthChanged;
+        public event Action<int> TurnsChanged;
 
         [Inject]
         public DiContainer Container { get; set; }
 
         [Inject]
         private PlayerModel PlayerModel { get; set; }
+
+        [Inject]
+        private WindowManager WindowManager { get; set; }
 
         [Inject]
         private LevelListConfig LevelListConfig { get; }
@@ -63,8 +68,10 @@ namespace Project.Scripts.Core
         public bool ApplyTurn(int turns)
         {
             StepsLeft -= turns;
+            TurnsChanged?.Invoke(StepsLeft);
             if (StepsLeft <= 0)
             {
+                WindowManager.ShowWindow<TryAgainWindow>(new TryAgainWindowModel());
                 return false;
             }
 

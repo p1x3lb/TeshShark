@@ -36,6 +36,8 @@ namespace Project.Scripts.Core
             context.Initialize(map.GetComponentsInChildren<CellView>());
 
             GoalsManager.Initialize(context.Level.Goals);
+
+            WindowManager.ShowWindow<HUD>(new HUDModel());
         }
 
         public void Dispose()

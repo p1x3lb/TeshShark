@@ -17,11 +17,11 @@ namespace Project.Scripts.Core.Goals
 
     public class TorchGoalModel : GoalModel
     {
-        protected override int Aim { get; }
+        public override int Target { get; }
 
         public TorchGoalModel(int toDefeat)
         {
-            Aim = toDefeat;
+            Target = toDefeat;
         }
 
         protected override void OnInitialize()

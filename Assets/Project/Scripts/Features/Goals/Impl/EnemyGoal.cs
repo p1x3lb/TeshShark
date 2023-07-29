@@ -17,11 +17,11 @@ namespace Project.Scripts.Core.Goals
 
     public class EnemyGoalModel : GoalModel
     {
-        protected override int Aim { get; }
+        public override int Target { get; }
 
         public EnemyGoalModel(int toDefeat)
         {
-            Aim = toDefeat;
+            Target = toDefeat;
         }
 
         protected override void OnInitialize()

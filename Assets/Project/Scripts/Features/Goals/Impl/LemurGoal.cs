@@ -17,11 +17,11 @@ namespace Project.Scripts.Core.Goals
 
     public class LemurGoalModel : GoalModel
     {
-        protected override int Aim { get; }
+        public override int Target { get; }
 
         public LemurGoalModel(int toDefeat)
         {
-            Aim = toDefeat;
+            Target = toDefeat;
         }
 
         protected override void OnInitialize()

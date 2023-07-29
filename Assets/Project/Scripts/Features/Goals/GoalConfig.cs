@@ -12,13 +12,13 @@ namespace Project.Scripts.Core
         public event Action<GoalModel> Complete;
         public event Action<GoalModel> Updated;
 
-        private int _current;
-
-        protected abstract int Aim { get; }
+        public bool IsCompleted => Current == Target;
+        public abstract int Target { get; }
+        public int Current { get; private set; }
 
         public void Initialize()
         {
-            _current = 0;
+            Current = 0;
             OnInitialize();
         }
 
@@ -45,10 +45,10 @@ namespace Project.Scripts.Core
 
         protected void Fire()
         {
-            _current++;
+            Current++;
             Updated?.Invoke(this);
 
-            if (_current == Aim)
+            if (IsCompleted)
             {
                 Complete?.Invoke(this);
                 OnComplete();

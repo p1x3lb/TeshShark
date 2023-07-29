@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab9112582874a749c40d8e5f291694e, type: 3}
   m_Name: UIConfig
   m_EditorClassIdentifier: 
-  _rootPrefab: {fileID: 5278001868705932741, guid: e53bdcc1d7a954734a5dcd8dca6434b6, type: 3}
   _configs:
   - _window: MetaWindow
     _prefab: {fileID: 7365660197155170711, guid: d91c019e99ebd413384de5d8f7c82adf, type: 3}
+  - _window: TryAgainWindow
+    _prefab: {fileID: 7365660197155170711, guid: 72514a138a7324eee98d6237b75bff68, type: 3}
+  - _window: WinWindow
+    _prefab: {fileID: 7365660197155170711, guid: 7049717c7b0ff4b5b94428736d460551, type: 3}
+  - _window: LoseWindow
+    _prefab: {fileID: 7365660197155170711, guid: 07826aa887eb34f95b6feaf8d82c7fe3, type: 3}
+  - _window: HUD
+    _prefab: {fileID: 7365660197155170711, guid: fca075b2a17e241cd8d04397d6fa993a, type: 3}
+  - _window: ExitWindow
+    _prefab: {fileID: 7365660197155170711, guid: 739d6eb2d6eeb41ef88a413726043b4f, type: 3}
