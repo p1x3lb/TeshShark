@@ -15,6 +15,7 @@ namespace Project.Scripts.Core
         public bool IsCompleted => Current == Target;
         public abstract int Target { get; }
         public int Current { get; private set; }
+        public abstract Type ContentType { get; }
 
         public void Initialize()
         {

@@ -15,9 +15,9 @@ namespace Project.Scripts.Core.Goals
         }
     }
 
-    public class LemurGoalModel : GoalModel, ISpawnableGoal
+    public class LemurGoalModel : GoalModel
     {
-        public Type ContentType => typeof(LemurContent);
+        public override Type ContentType => typeof(LemurContent);
 
         public override int Target { get; }
 

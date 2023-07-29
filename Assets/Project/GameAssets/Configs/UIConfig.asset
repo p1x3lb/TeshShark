@@ -16,7 +16,7 @@ MonoBehaviour:
   - _window: MetaWindow
     _prefab: {fileID: 7365660197155170711, guid: d91c019e99ebd413384de5d8f7c82adf, type: 3}
   - _window: TryAgainWindow
-    _prefab: {fileID: 7365660197155170711, guid: 72514a138a7324eee98d6237b75bff68, type: 3}
+    _prefab: {fileID: 7365660197155170711, guid: 07826aa887eb34f95b6feaf8d82c7fe3, type: 3}
   - _window: WinWindow
     _prefab: {fileID: 7365660197155170711, guid: 7049717c7b0ff4b5b94428736d460551, type: 3}
   - _window: LoseWindow

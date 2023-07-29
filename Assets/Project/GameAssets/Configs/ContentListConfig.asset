@@ -17,9 +17,13 @@ MonoBehaviour:
   _contents:
   - _goal: EnemyShipContent
     _cellContent: {fileID: 1630571670706502425, guid: d8f701520ad184009aad8c39d984e8e2, type: 3}
+    _sprite: {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
   - _goal: LemurContent
     _cellContent: {fileID: 6599756664826574034, guid: 3d339e80bf29347649b1e33dc9e87c4b, type: 3}
+    _sprite: {fileID: 0}
   - _goal: TorchContent
     _cellContent: {fileID: 8919752093910184772, guid: 1a5734f0776aa43759b15491ca2026d7, type: 3}
+    _sprite: {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
   - _goal: FoodContent
     _cellContent: {fileID: 4395939260882135558, guid: 409479143c1e9424f89a737bdc096836, type: 3}
+    _sprite: {fileID: 21300000, guid: 7f98d0289331648d2b8d4fcb81030336, type: 3}

@@ -11,18 +11,18 @@ namespace Project.Scripts.Core
 {
     public class HUDModel : WindowModel
     {
+        public CoreStateContext CoreStateContext { get; }
+
+        public HUDModel(CoreStateContext coreStateContext)
+        {
+            CoreStateContext = coreStateContext;
+        }
     }
 
     public class HUD : Window<HUDModel>
     {
         [Inject]
         private WindowManager WindowManager { get; }
-
-        [Inject]
-        private CoreStateContext CoreStateContext { get; }
-
-        [Inject]
-        private InputManager InputManager { get; }
 
         [Inject]
         private PlayerModel PlayerModel { get; }
@@ -48,6 +48,9 @@ namespace Project.Scripts.Core
         [SerializeField]
         private TextMeshProUGUI _damageText;
 
+        [SerializeField]
+        private TextMeshProUGUI _turnsText;
+
         private readonly List<GoalListItem> _goalList = new List<GoalListItem>();
 
         [UsedImplicitly]
@@ -58,11 +61,12 @@ namespace Project.Scripts.Core
 
         protected override UniTask OnShow()
         {
-            _levelText.text = (PlayerModel.PlayerLevel + 1).ToString();
-            _speedText.text = CoreStateContext.Speed.ToString();
-            _damageText.text = CoreStateContext.Damage.ToString();
+            _levelText.text = $"Lvl. {(PlayerModel.PlayerLevel + 1).ToString()}";
+            _speedText.text = Model.CoreStateContext.Speed.ToString();
+            _damageText.text = Model.CoreStateContext.Damage.ToString();
+            _turnsText.text = Model.CoreStateContext.StepsLeft.ToString();
 
-            CoreStateContext.TurnsChanged += OnTurnsChanged;
+            Model.CoreStateContext.TurnsChanged += OnTurnsChanged;
 
             foreach (var goal in GoalsManager.ActiveGoals)
             {
@@ -81,13 +85,13 @@ namespace Project.Scripts.Core
                 Destroy(item);
             }
 
-            CoreStateContext.TurnsChanged -= OnTurnsChanged;
+            Model.CoreStateContext.TurnsChanged -= OnTurnsChanged;
             return base.OnHide();
         }
 
         private void OnTurnsChanged(int count)
         {
-            _damageText.text = count.ToString();
+            _turnsText.text = count.ToString();
         }
     }
 }

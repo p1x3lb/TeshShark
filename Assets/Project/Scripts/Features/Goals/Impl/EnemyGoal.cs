@@ -15,9 +15,9 @@ namespace Project.Scripts.Core.Goals
         }
     }
 
-    public class EnemyGoalModel : GoalModel, ISpawnableGoal
+    public class EnemyGoalModel : GoalModel
     {
-        public Type ContentType => typeof(EnemyShipContent);
+        public override Type ContentType => typeof(EnemyShipContent);
 
         public override int Target { get; }
 

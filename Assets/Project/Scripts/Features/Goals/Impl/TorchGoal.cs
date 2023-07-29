@@ -15,9 +15,9 @@ namespace Project.Scripts.Core.Goals
         }
     }
 
-    public class TorchGoalModel : GoalModel, ISpawnableGoal
+    public class TorchGoalModel : GoalModel
     {
-        public Type ContentType => typeof(TorchContent);
+        public override Type ContentType => typeof(TorchContent);
 
         public override int Target { get; }
 

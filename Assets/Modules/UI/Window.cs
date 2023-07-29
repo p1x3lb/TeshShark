@@ -74,6 +74,7 @@ namespace UI
             Model.HideSource.TrySetResult();
             Model.Destroy();
             Model = null;
+            Destroy(gameObject);
         }
 
         protected virtual UniTask OnShow()

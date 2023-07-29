@@ -1,7 +1,10 @@
 using Cysharp.Threading.Tasks;
+using GameStateMachine.Project.Scripts.Modules.GameStateMachine;
 using JetBrains.Annotations;
+using Project.Scripts.Meta;
 using UI;
 using UnityEngine;
+using Zenject;
 
 namespace Project.Scripts.Core
 {
@@ -12,6 +15,9 @@ namespace Project.Scripts.Core
 
     public class ExitWindow : Window<ExitWindowModel>
     {
+        [Inject]
+        private IGameStateMachine GameStateMachine { get; }
+
         [UsedImplicitly]
         public void OnCancel()
         {
@@ -21,7 +27,7 @@ namespace Project.Scripts.Core
         [UsedImplicitly]
         public void OnExit()
         {
-            Application.Quit();
+            GameStateMachine.Enter<MetaState>();
         }
     }
 }

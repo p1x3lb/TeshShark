@@ -38,7 +38,7 @@ namespace Project.Scripts.Core
 
             GoalsManager.Initialize(context.Level.Goals);
 
-            WindowManager.ShowWindow<HUD>(new HUDModel());
+            WindowManager.ShowWindow<HUD>(new HUDModel(context));
         }
 
         public void Dispose()

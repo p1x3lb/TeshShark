@@ -169,9 +169,9 @@ namespace Project.Scripts.Infrastructure
         {
             Find<ShipContent>(out int column, out int row);
             var shipCell = CoreStateContext.Cells[row, column];
-            foreach (var goalModel in GoalsManager.ActiveGoals.Where(goal => goal is ISpawnableGoal && !goal.IsCompleted))
+            foreach (var goalModel in GoalsManager.ActiveGoals.Where(goal => !goal.IsCompleted))
             {
-                var spawnableGoal = goalModel as ISpawnableGoal;
+                var spawnableGoal = goalModel;
                 var goalTargets = CoreStateContext.CellsEnumerable.Count(cell => cell.Content != null && cell.Content.GetType() == spawnableGoal.ContentType);
                 if (goalTargets == 0)
                 {
@@ -185,7 +185,7 @@ namespace Project.Scripts.Infrastructure
                                Mathf.Abs(range.y) <= ContentListConfig.MaxRange;
                     });
 
-                    var content = CoreStateContext.Container.InstantiatePrefabForComponent<CellContent>(ContentListConfig.GetContent(spawnableGoal.ContentType), cell.Position, Quaternion.identity, CoreStateContext.Map);
+                    var content = CoreStateContext.Container.InstantiatePrefabForComponent<CellContent>(ContentListConfig.GetContent(spawnableGoal.ContentType).CellContent, cell.Position, Quaternion.identity, CoreStateContext.Map);
                     cell.SetContent(content);
                 }
             }

@@ -26,9 +26,9 @@ namespace Project.Scripts.Core
         [UsedImplicitly]
         public static readonly List<string> CONTENT = new();
 
-        public CellContent GetContent(Type spawnableGoalContentType)
+        public ContentConfig GetContent(Type spawnableGoalContentType)
         {
-            return _contents.FirstOrDefault(x => x.Goal == spawnableGoalContentType.Name)?.CellContent;
+            return _contents.FirstOrDefault(x => x.Goal == spawnableGoalContentType.Name);
         }
 
 #if UNITY_EDITOR
@@ -55,7 +55,12 @@ namespace Project.Scripts.Core
         [SerializeField]
         private CellContent _cellContent;
 
+        [SerializeField]
+        private Sprite _sprite;
+
         public string Goal => _goal;
+
+        public Sprite Sprite => _sprite;
 
         public CellContent CellContent => _cellContent;
     }
