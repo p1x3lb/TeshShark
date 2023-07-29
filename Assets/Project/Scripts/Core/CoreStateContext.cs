@@ -5,6 +5,7 @@ using GameStateMachine.Modules.GameStateMachine;
 using Project.Scripts.Features;
 using Project.Scripts.Infrastructure;
 using UI;
+using UnityEngine;
 using Zenject;
 
 namespace Project.Scripts.Core
@@ -28,6 +29,7 @@ namespace Project.Scripts.Core
         public LevelConfig Level => LevelListConfig.GetLevel(PlayerModel.PlayerLevel);
         public int StepsLeft { get; set; }
         public CellView[,] Cells { get; private set; }
+        public Transform Map { get; set; }
         public int Speed => Level.Speed;
         public int Damage => Level.Damage;
 

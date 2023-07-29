@@ -75,4 +75,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelListConfig: {fileID: 11400000, guid: 71a7cbb99133740d995aac020dfe2d1d, type: 2}
+  _contentListConfig: {fileID: 11400000, guid: ec132607108d642c2919e8b39fe5d239, type: 2}
   _uiConfig: {fileID: 11400000, guid: 9b44f7c1f6e254318a3356c37eeb81e4, type: 2}

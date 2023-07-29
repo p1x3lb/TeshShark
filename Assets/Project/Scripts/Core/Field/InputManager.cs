@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using System.Threading.Tasks;
-using Common.Scopes;
 using Cysharp.Threading.Tasks;
 using Project.Scripts.Core;
 using Project.Scripts.Core.Field;
@@ -19,6 +17,12 @@ namespace Project.Scripts.Infrastructure
 
         [Inject]
         private CoreStateContext CoreStateContext { get; }
+
+        [Inject]
+        private ContentListConfig ContentListConfig { get; }
+
+        [Inject]
+        private GoalsManager GoalsManager { get; }
 
         [SerializeField]
         private Camera _camera;
@@ -156,8 +160,35 @@ namespace Project.Scripts.Infrastructure
 
             await ProcessPlayerStep(ship, points);
             await ProcessShipsStep();
+            await ProcessSpawnStep();
 
             IsLocked = false;
+        }
+
+        private async UniTask ProcessSpawnStep()
+        {
+            Find<ShipContent>(out int column, out int row);
+            var shipCell = CoreStateContext.Cells[row, column];
+            foreach (var goalModel in GoalsManager.ActiveGoals.Where(goal => goal is ISpawnableGoal && !goal.IsCompleted))
+            {
+                var spawnableGoal = goalModel as ISpawnableGoal;
+                var goalTargets = CoreStateContext.CellsEnumerable.Count(cell => cell.Content != null && cell.Content.GetType() == spawnableGoal.ContentType);
+                if (goalTargets == 0)
+                {
+                    var cell = CoreStateContext.CellsEnumerable.FirstOrDefault(cell =>
+                    {
+                        var range = (cell.Position - shipCell.Position);
+                        return cell.Content == null &&
+                               Mathf.Abs(range.x) >= ContentListConfig.MinRange &&
+                               Mathf.Abs(range.y) >= ContentListConfig.MinRange &&
+                               Mathf.Abs(range.x) <= ContentListConfig.MaxRange &&
+                               Mathf.Abs(range.y) <= ContentListConfig.MaxRange;
+                    });
+
+                    var content = CoreStateContext.Container.InstantiatePrefabForComponent<CellContent>(ContentListConfig.GetContent(spawnableGoal.ContentType), cell.Position, Quaternion.identity, CoreStateContext.Map);
+                    cell.SetContent(content);
+                }
+            }
         }
 
         private async UniTask ProcessShipsStep()

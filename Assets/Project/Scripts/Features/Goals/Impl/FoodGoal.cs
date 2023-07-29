@@ -15,8 +15,9 @@ namespace Project.Scripts.Core.Goals
         }
     }
 
-    public class FoodGoalModel : GoalModel
+    public class FoodGoalModel : GoalModel, ISpawnableGoal
     {
+        public Type ContentType => typeof(FoodContent);
         public override int Target { get; }
 
         public FoodGoalModel(int toDefeat)

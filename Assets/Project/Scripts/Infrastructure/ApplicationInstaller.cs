@@ -13,6 +13,9 @@ namespace Project.GameAssets
         private LevelListConfig _levelListConfig;
 
         [SerializeField]
+        private ContentListConfig _contentListConfig;
+
+        [SerializeField]
         private UIConfig _uiConfig;
 
         public override void InstallBindings()
@@ -22,6 +25,7 @@ namespace Project.GameAssets
 
             Container.BindInterfacesAndSelfTo<PlayerModel>().AsSingle();
             Container.Bind<LevelListConfig>().FromInstance(_levelListConfig).AsSingle();
+            Container.Bind<ContentListConfig>().FromInstance(_contentListConfig).AsSingle();
             Container.Bind<UIConfig>().FromInstance(_uiConfig).AsSingle();
             Container.BindInterfacesAndSelfTo<GoalsManager>().AsSingle();
         }

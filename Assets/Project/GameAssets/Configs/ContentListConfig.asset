@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419399132080418e89544dde7036c186, type: 3}
+  m_Name: ContentListConfig
+  m_EditorClassIdentifier: 
+  _minRange: 3
+  _maxRange: 6
+  _contents:
+  - _goal: EnemyShipContent
+    _cellContent: {fileID: 1630571670706502425, guid: d8f701520ad184009aad8c39d984e8e2, type: 3}
+  - _goal: LemurContent
+    _cellContent: {fileID: 6599756664826574034, guid: 3d339e80bf29347649b1e33dc9e87c4b, type: 3}
+  - _goal: TorchContent
+    _cellContent: {fileID: 8919752093910184772, guid: 1a5734f0776aa43759b15491ca2026d7, type: 3}
+  - _goal: FoodContent
+    _cellContent: {fileID: 4395939260882135558, guid: 409479143c1e9424f89a737bdc096836, type: 3}

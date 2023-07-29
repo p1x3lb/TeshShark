@@ -33,6 +33,7 @@ namespace Project.Scripts.Core
 
             var map = context.Container.InstantiatePrefab(context.Level.MapPrefab);
 
+            context.Map = map.transform;
             context.Initialize(map.GetComponentsInChildren<CellView>());
 
             GoalsManager.Initialize(context.Level.Goals);
