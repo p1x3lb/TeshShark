@@ -195,7 +195,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7674dc91de932b542a762a122399aa5b, type: 2}
+  - {fileID: 2100000, guid: 52bc7d31c37097e4cbd5e668ed18d6ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 696f87eefcf81694f9fbf1ce9a463ff1, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 7674dc91de932b542a762a122399aa5b, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 52bc7d31c37097e4cbd5e668ed18d6ba, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -539,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8223956122382065685, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.000000059604645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8223956122382065685, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
       propertyPath: m_Bounds.m_Center.y
@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8223956122382065685, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 0.7899999
+      value: 0.78999996
       objectReference: {fileID: 0}
     - target: {fileID: 8223956122382065685, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
       propertyPath: m_Bounds.m_Extent.y

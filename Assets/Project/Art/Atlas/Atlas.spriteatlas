@@ -57,32 +57,156 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 9db2168f5b6c57843850f362b540a98a, type: 3}
+    - {fileID: 102900000, guid: 8244414d16b9f4b4b8ce6a86d56acdfd, type: 3}
+    - {fileID: 102900000, guid: f2fcbd4ffb6b9b849bfa174dcd8aaf73, type: 3}
+    - {fileID: 102900000, guid: c975e740fb78d6c42bc6b8aae11f77ff, type: 3}
+    - {fileID: 102900000, guid: 44addc4dbde69774e8712d88406b4838, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: ba2d593024e409d449b07f1cda370034, type: 3}
+  - {fileID: 21300000, guid: 52f2c2c03fc3a1444bae74f2adf1c419, type: 3}
+  - {fileID: 21300000, guid: 5e53b3113aadd33478597e4e3a30abb1, type: 3}
+  - {fileID: 21300000, guid: bd74e481d2b7fdb4e9879f2547492725, type: 3}
+  - {fileID: 21300000, guid: d0424b811c763324993f8675fe7b32c7, type: 3}
   - {fileID: 6536131472477687951, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
   - {fileID: 5652618372114322917, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
   - {fileID: 1889153371149406131, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
   - {fileID: 4116740544798490017, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
   - {fileID: 2480869727787867055, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
+  - {fileID: 21300000, guid: 0812a6123a78fbd41b2f29c0e24ffb2b, type: 3}
+  - {fileID: 21300000, guid: d36871524b29a3c42a9f31fa573a9f7c, type: 3}
+  - {fileID: 21300000, guid: 2dfbc7924129adb44ae35e4b39f59fcb, type: 3}
+  - {fileID: 21300000, guid: cfb934c2a19aff340bca7a35fef2251f, type: 3}
+  - {fileID: 21300000, guid: 26c2d9f217ea8f74583f4a4b9a8952d7, type: 3}
+  - {fileID: 21300000, guid: 6f1cf583e0b516b44bec174fabad10fa, type: 3}
+  - {fileID: 21300000, guid: 5d0a4893c856a3449903cbe298cb7d07, type: 3}
+  - {fileID: 21300000, guid: d3d5f7340d52e25458d29d3a34020a2e, type: 3}
+  - {fileID: 21300000, guid: 30ca59348fce00e45bf0e697b59f3351, type: 3}
+  - {fileID: 21300000, guid: e99f78445160ab64e9ae54ee08c26bdc, type: 3}
+  - {fileID: 21300000, guid: 2f25368449fe35f42bc13fcf477462d4, type: 3}
+  - {fileID: 21300000, guid: 64f13eb4d14d52f45a75c9e741dbbf8e, type: 3}
+  - {fileID: 21300000, guid: 8440a265ef97c2e428fada3418a1c977, type: 3}
+  - {fileID: 21300000, guid: 07b814658df605f4eaff4899707f20a4, type: 3}
+  - {fileID: 21300000, guid: ee214d75e9567914596a3314546f92ff, type: 3}
+  - {fileID: 21300000, guid: fa2213a5c6a269c49a993c84985c3678, type: 3}
+  - {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
+  - {fileID: 21300000, guid: 3dcb4046b7efb924dafee6ceb453bd01, type: 3}
+  - {fileID: 21300000, guid: efcfdf5686842ad4bb8a027b9ad38b9e, type: 3}
+  - {fileID: 21300000, guid: 44b3856635df3a94ca1d49244e915b19, type: 3}
+  - {fileID: 21300000, guid: 217f92961d5d34760b3a7e4913c01d1f, type: 3}
+  - {fileID: 21300000, guid: 55ecac174979c8c40be3e5a1df661973, type: 3}
+  - {fileID: 21300000, guid: c2a5696777171bf47a2b8c7b0e7b8b51, type: 3}
+  - {fileID: 21300000, guid: 289b2f97f140e4784a7488f135c8c7f3, type: 3}
+  - {fileID: 21300000, guid: 2f5b1cd7012e5e24ab86277e533f1a1b, type: 3}
+  - {fileID: 21300000, guid: 2c15661881424e34ab99e1eedab66eb7, type: 3}
+  - {fileID: 21300000, guid: 7f98d0289331648d2b8d4fcb81030336, type: 3}
+  - {fileID: 21300000, guid: d618cd3824d490e4da23a4a65976674f, type: 3}
+  - {fileID: 21300000, guid: b7bdb498f32084cbb96e7ab416762806, type: 3}
+  - {fileID: 21300000, guid: 23a57bc857d02904c8dc23cbc753a88b, type: 3}
+  - {fileID: 21300000, guid: a902f5e88226d7b4294f1ad62145af53, type: 3}
+  - {fileID: 21300000, guid: 4f18d519337e14fba819d50ea3b4603c, type: 3}
+  - {fileID: 21300000, guid: b0411a29f1de0a74f8a85f805644344e, type: 3}
+  - {fileID: 21300000, guid: 2d5978496af5a0349b37a6b02f049832, type: 3}
   - {fileID: 6536131472477687951, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 5652618372114322917, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 1889153371149406131, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 4116740544798490017, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 2480869727787867055, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
+  - {fileID: 21300000, guid: 5d66fdfa76cfbd8419aaa5a71203a18b, type: 3}
+  - {fileID: 21300000, guid: 1091b63bc6e8941c1b590c01f02d86e7, type: 3}
+  - {fileID: 21300000, guid: d420d14bb8c01ba438ac11e3ec083ca8, type: 3}
+  - {fileID: 21300000, guid: 34d649ab568277543bd670aea22f23ba, type: 3}
+  - {fileID: 21300000, guid: f81782acb010978469828ed1f96f46b7, type: 3}
+  - {fileID: 21300000, guid: 182acabc85b859646ba16bc302dc1ab4, type: 3}
+  - {fileID: 21300000, guid: 2facae2d10daf8c4599b9075ca52ff91, type: 3}
+  - {fileID: 21300000, guid: 16fbb93d3229d0044a512254ad95843c, type: 3}
+  - {fileID: 21300000, guid: d6601e9d92d9b2d42805babfdf5fc722, type: 3}
+  - {fileID: 21300000, guid: a25ee7bddc5714bc3aae7351c3dcfad2, type: 3}
+  - {fileID: 21300000, guid: 32f35d0e8d7e1304c832f835bff36326, type: 3}
+  - {fileID: 21300000, guid: fa4e453ea923f3d4280b7f23f442d95d, type: 3}
+  - {fileID: 21300000, guid: e5f05eae3e56a5c4abd0769e83b976c3, type: 3}
+  - {fileID: 21300000, guid: 7888d1defeb254d128d2b991e0405674, type: 3}
+  - {fileID: 21300000, guid: d12e4dee443a3ae44bd994ac154a28f5, type: 3}
+  - {fileID: 21300000, guid: 8a3d5dfe177915b4a87816559acc4e52, type: 3}
+  - {fileID: 21300000, guid: 1942b83f35b7b434485af650c020ead9, type: 3}
+  - {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
+  - {fileID: 21300000, guid: 26bfa1bff3297d84d90f028ca18791b7, type: 3}
+  - {fileID: 21300000, guid: c35388cf60ef7e64ebb34b8c276bf262, type: 3}
+  - {fileID: 21300000, guid: 87aa54ffb57a8ef45aadaf8d0bc4bcd1, type: 3}
   m_PackedSpriteNamesToIndex:
+  - shadow_text
+  - x
+  - UI_effect_dotSmall
+  - Water_tile
+  - bg_fon
   - Ship_Left_Up
   - Ship_Left_Down
   - Ship_Up
   - Ship_Down
   - Ship_Left
+  - shturval
+  - arrow_hod
+  - button
+  - button_shared_slice_greenmain_grey
+  - art
+  - x_hod
+  - particle_star_glow_02
+  - image_transition_logo
+  - inner_panel_quests
+  - progressbar
+  - particle_star_glow_16
+  - MagicLine
+  - UI_effect_rays2
+  - mask_03
+  - art_3
+  - particle_ray_single_03
+  - Pirate_Ship_Left_Down
+  - popup
+  - image_transition_background
+  - art_2
+  - panel_transition_gradient
+  - button_2
+  - button_shared_slice_greenmain
+  - bochka_water
+  - inner_panel_quests_counter
+  - heart
+  - grape
+  - particle_ray_single
+  - fx_transition_blick
+  - mask_02
+  - particle_cloud3
+  - panel_transition_slice_progress_foreground
+  - Rock01
+  - Shoreline01
   - Ship_Left_Up
   - Ship_Left_Down
   - Ship_Up
   - Ship_Down
   - Ship_Left
+  - Glow
+  - panel_transition_slice_progress_background
+  - button_shared_slice_mask
+  - zastavka
+  - progressbar_bg
+  - close
+  - UI_panel_Ring
+  - panel_quests
+  - moves
+  - fx_transition_spark
+  - button_green_big
+  - panel_transition_progress_fill
+  - Ship_Left_Down
+  - majak
+  - Rock02
+  - particle_star_glow_17
+  - art_4
+  - butilka
+  - bg_lvl
+  - particle_slash_06
+  - particle_dot_soft_04
   m_RenderDataMap: {}
   m_Tag: Atlas
   m_IsVariant: 0
