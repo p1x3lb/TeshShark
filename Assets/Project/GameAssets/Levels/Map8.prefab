@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1488581739394549206
+--- !u!1001 &573017944402950653
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 106797159779941035, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_Name
-      value: Map1
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 106797159779941036, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
       propertyPath: m_RootOrder
