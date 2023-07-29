@@ -15,12 +15,93 @@ MonoBehaviour:
   _levels:
   - _stepCount: 15
     _speed: 5
+    _damage: 2
     _mapPrefab: {fileID: 106797159779941035, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
     _goalConfigs:
     - rid: 8122494385997742080
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: 825187624c3b8452b93411d80ba30940, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098176
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: 16d674d121ad247dc8ee959d508bc00d, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098177
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: 81fc04bfa675d4607a4744a0b06ce2d7, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098178
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: e98225078b14f4808b0b5169e8621beb, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098179
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: 4cbc3667544254f9e8971ab9a6051e4a, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098180
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: 5cd1af276037c4121be2cdabdd8ae3bf, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098181
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: 5bd509a2e133641998e0052a9eff58c9, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098182
+  - _stepCount: 15
+    _speed: 5
+    _damage: 2
+    _mapPrefab: {fileID: 1572858289573265277, guid: aa9c74bc0cc314257b2bb2780d040ecb, type: 3}
+    _goalConfigs:
+    - rid: 3086543117426098183
   references:
     version: 2
     RefIds:
+    - rid: 3086543117426098176
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098177
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098178
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098179
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098180
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098181
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098182
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
+    - rid: 3086543117426098183
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1
     - rid: 8122494385997742080
       type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
