@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Project.Scripts.Core;
 using UnityEngine;
 
 namespace Project.Scripts.Infrastructure
@@ -19,17 +21,21 @@ namespace Project.Scripts.Infrastructure
     public class LevelConfig
     {
         [SerializeField]
-        private int _stepCount;
+        private int _stepCount = 5;
 
         [SerializeField]
-        private int _speed;
+        private int _speed = 5;
 
         [SerializeField]
         private GameObject _mapPrefab;
+
+        [SerializeReference]
+        private List<IGoal> _goalConfigs;
 
         public int StepCount => _stepCount;
 
         public GameObject MapPrefab => _mapPrefab;
         public int Speed => _speed;
+        public IReadOnlyList<IGoal> Goals => _goalConfigs;
     }
 }

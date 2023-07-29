@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Project.Scripts.Core
 {
-    public class EnemyShip : CellContent
+    public class EnemyShipContent : CellContent
     {
         [SerializeField]
         private int _health = 1;

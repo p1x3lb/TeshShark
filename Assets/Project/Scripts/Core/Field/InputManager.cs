@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Project.Scripts.Core;
 using UnityEngine;
@@ -137,6 +138,14 @@ namespace Project.Scripts.Infrastructure
 
             CoreStateContext.StepsLeft--;
 
+            await ProcessPlayerStep(ship, points);
+
+
+            IsLocked = false;
+        }
+
+        private async UniTask ProcessPlayerStep(ShipContent ship, List<CellView> points)
+        {
             for (var i = 1; i < points.Count; i++)
             {
                 await points[i].Travel(ship, default);
@@ -149,13 +158,6 @@ namespace Project.Scripts.Infrastructure
 
             points.First().SetContent(null);
             points.Last().SetContent(ship);
-
-            foreach (var selectable in points)
-            {
-                selectable.Clear();
-            }
-
-            IsLocked = false;
         }
     }
 }

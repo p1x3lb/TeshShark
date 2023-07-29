@@ -14,4 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levels:
   - _stepCount: 15
+    _speed: 5
     _mapPrefab: {fileID: 106797159779941035, guid: ba3b7fbd61b19432a898b480f45fd90a, type: 3}
+    _goalConfigs:
+    - rid: 8122494385997742080
+  references:
+    version: 2
+    RefIds:
+    - rid: 8122494385997742080
+      type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 1

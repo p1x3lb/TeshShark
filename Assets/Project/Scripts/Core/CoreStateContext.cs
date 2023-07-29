@@ -16,7 +16,6 @@ namespace Project.Scripts.Core
         [Inject]
         private LevelListConfig LevelListConfig { get; }
 
-
         public LevelConfig Level => LevelListConfig.GetLevel(PlayerModel.PlayerLevel);
         public int StepsLeft { get; set; }
         public IReadOnlyList<CellView> Cells { get; private set; }

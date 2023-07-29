@@ -18,6 +18,9 @@ namespace Project.Scripts.Core
         [Inject]
         private PlayerModel PlayerModel { get; }
 
+        [Inject]
+        private GoalsManager GoalsManager { get; }
+
         public async UniTask Enter(CancellationToken cancellationToken)
         {
             await SceneManager.LoadSceneAsync("CoreScene").ToUniTask(cancellationToken: cancellationToken);
@@ -31,6 +34,8 @@ namespace Project.Scripts.Core
             var map = context.Container.InstantiatePrefab(context.Level.MapPrefab);
 
             context.Initialize(map.GetComponentsInChildren<CellView>());
+
+            GoalsManager.Initialize(context.Level.Goals);
         }
 
         public void Dispose()

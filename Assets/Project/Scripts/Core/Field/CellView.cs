@@ -26,15 +26,12 @@ namespace Project.Scripts.Core
         public void Select()
         {
             _arrows.gameObject.SetActive(true);
-            Debug.Log($"{transform.parent.name} {name} Selected");
         }
 
         public void Clear()
         {
             _arrows.gameObject.SetActive(false);
-            Debug.Log($"{transform.parent.name} {name} Clear");
         }
-
 
         public void SetContent(CellContent content)
         {
@@ -55,6 +52,7 @@ namespace Project.Scripts.Core
 
         public async UniTask Travel(ShipContent ship, CancellationToken cancellationToken)
         {
+            Clear();
             await ship.Travel(Position, cancellationToken);
             SetContent(null);
         }
