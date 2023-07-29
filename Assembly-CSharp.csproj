@@ -106,7 +106,7 @@
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModulePhysics.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleSprite.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/StackScope.cs" />
-     <Compile Include="Assets/Project/Scripts/Core/Field/Content/CellContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Field/CellContent.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/SortedDictionaryScope.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/StopwatchScope.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleAudio.cs" />
@@ -121,6 +121,9 @@
      <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/EnemyGoal.cs" />
      <Compile Include="Assets/Project/Scripts/Core/Field/BfsShortestPath.cs" />
      <Compile Include="Assets/Project/Scripts/Core/Field/Content/RockContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/TorchGoal.cs" />
+     <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/LemurGoal.cs" />
+     <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/FoodGoal.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Modules/PlayerRecord" />
      <Folder Include="Assets/Project/GameAssets/Prefabs" />
@@ -228,6 +231,7 @@
      <Folder Include="Assets/Modules" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+     <Folder Include="Assets/Project/Art/Animation" />
      <Folder Include="Assets/Modules/UniTask" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
