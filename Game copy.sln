@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateMachine", "GameSta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils.csproj", "{c5fa3ffd-b569-f52c-ccdc-7b69717f4b81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{4becdaa3-71ea-6d9c-a82f-e7fde04a56b0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Addressables", "UniTask.Addressables.csproj", "{d5959f0f-1878-81af-2bf6-d85c938de0e9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.CompatibilityLayer", "Sirenix.OdinInspector.CompatibilityLayer.csproj", "{4e99955b-280d-1657-c847-392995004f1a}"
@@ -36,8 +34,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{a7bf2f23-ca50-ceb1-78b0-349e08899479}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-ReflectionBaking-Editor", "Zenject-ReflectionBaking-Editor.csproj", "{4df74b7b-31da-10bf-c944-bffe48f33aa8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{8e6491f3-1fb2-91f9-b1ff-ff8a4f97117c}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-Editor", "Zenject-Editor.csproj", "{0333de62-e8fc-5842-ee3b-e3247569110e}"
 EndProject
@@ -64,8 +60,6 @@ Global
 		{3ed5f7f6-bce4-1fff-c0f9-2a2356010a90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{c5fa3ffd-b569-f52c-ccdc-7b69717f4b81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c5fa3ffd-b569-f52c-ccdc-7b69717f4b81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4becdaa3-71ea-6d9c-a82f-e7fde04a56b0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4becdaa3-71ea-6d9c-a82f-e7fde04a56b0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d5959f0f-1878-81af-2bf6-d85c938de0e9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d5959f0f-1878-81af-2bf6-d85c938de0e9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4e99955b-280d-1657-c847-392995004f1a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -84,8 +78,6 @@ Global
 		{a7bf2f23-ca50-ceb1-78b0-349e08899479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4df74b7b-31da-10bf-c944-bffe48f33aa8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4df74b7b-31da-10bf-c944-bffe48f33aa8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8e6491f3-1fb2-91f9-b1ff-ff8a4f97117c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8e6491f3-1fb2-91f9-b1ff-ff8a4f97117c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0333de62-e8fc-5842-ee3b-e3247569110e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0333de62-e8fc-5842-ee3b-e3247569110e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05dfc607-d8dc-c69d-4548-d97ddee911ef}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

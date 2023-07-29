@@ -115,6 +115,7 @@ SpriteAtlas:
   - {fileID: 1889153371149406131, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 4116740544798490017, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 2480869727787867055, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
+  - {fileID: 21300000, guid: 1a373a5ae445348c1945a20c52eecebc, type: 3}
   - {fileID: 21300000, guid: 5d66fdfa76cfbd8419aaa5a71203a18b, type: 3}
   - {fileID: 21300000, guid: 1091b63bc6e8941c1b590c01f02d86e7, type: 3}
   - {fileID: 21300000, guid: d420d14bb8c01ba438ac11e3ec083ca8, type: 3}
@@ -186,6 +187,7 @@ SpriteAtlas:
   - Ship_Up
   - Ship_Down
   - Ship_Left
+  - icon_shared_greencheck (1)
   - Glow
   - panel_transition_slice_progress_background
   - button_shared_slice_mask
