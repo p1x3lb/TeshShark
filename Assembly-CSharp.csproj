@@ -124,6 +124,7 @@
      <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/TorchGoal.cs" />
      <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/LemurGoal.cs" />
      <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/FoodGoal.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/HUD.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Modules/PlayerRecord" />
      <Folder Include="Assets/Project/GameAssets/Prefabs" />

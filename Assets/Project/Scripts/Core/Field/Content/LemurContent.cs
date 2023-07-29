@@ -6,7 +6,7 @@ namespace Project.Scripts.Core
     {
         public static event Action Destroyed;
 
-        public override bool IsWalkable => false;
+        public override bool IsWalkable => true;
 
         public override void OnRemoved()
         {
