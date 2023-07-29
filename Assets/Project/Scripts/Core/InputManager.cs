@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
@@ -8,9 +9,10 @@ using Zenject;
 
 namespace Project.Scripts.Infrastructure
 {
-
     public class InputManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
     {
+        public event Action<int> RouteUpdated;
+
         [Inject]
         private CoreStateContext CoreStateContext { get; }
 
@@ -25,6 +27,8 @@ namespace Project.Scripts.Infrastructure
         private readonly RaycastHit2D[] _results = new RaycastHit2D[5];
 
         public bool IsLocked { get; set; }
+
+        #region Input
 
         public void OnDrag(PointerEventData eventData)
         {
@@ -41,11 +45,11 @@ namespace Project.Scripts.Infrastructure
             for (var i = 0; i < size; i++)
             {
                 var hit = _results[i];
-                if (!hit.collider.TryGetComponent(out CellView selectable) || !selectable.Available) continue;
+                if (!hit.collider.TryGetComponent(out CellView selectable)) continue;
 
                 Debug.Log($"{hit.transform.parent.name} {hit.collider.name} ");
 
-                if (!_selected.Contains(selectable))
+                if (!_selected.Contains(selectable) && selectable.Walkable && CoreStateContext.Speed > _selected.Count - 1)
                 {
                     var last = _selected.Last();
                     if (selectable.IsClose(last))
@@ -54,8 +58,10 @@ namespace Project.Scripts.Infrastructure
                         selectable.Select();
                         _selected.Add(selectable);
                         _lastSelected = selectable;
-                        break;
+                        RouteUpdated?.Invoke(_selected.Count - 1);
                     }
+
+                    break;
                 }
 
                 if (_lastSelected != selectable)
@@ -69,6 +75,7 @@ namespace Project.Scripts.Infrastructure
                     _selected.RemoveRange(index, _selected.Count - index);
                     _lastSelected = selectable;
                     _lastSelected.SetNext(null);
+                    RouteUpdated?.Invoke(_selected.Count - 1);
                     break;
                 }
             }
@@ -112,15 +119,19 @@ namespace Project.Scripts.Infrastructure
 
             if (_selected.Count > 1 && _selected[0]?.Content is ShipContent ship)
             {
-                Travel(ship, _selected.ToList()).Forget();
+                ProcessTurn(ship, _selected.ToList()).Forget();
             }
 
             _selected.Clear();
+            RouteUpdated?.Invoke(0);
             _lastSelected = null;
             _selecting = false;
         }
 
-        private async UniTask Travel(ShipContent ship, List<CellView> points)
+        #endregion
+
+
+        private async UniTask ProcessTurn(ShipContent ship, List<CellView> points)
         {
             IsLocked = true;
 
@@ -135,6 +146,9 @@ namespace Project.Scripts.Infrastructure
                     cell.ProcessClose();
                 }
             }
+
+            points.First().SetContent(null);
+            points.Last().SetContent(ship);
 
             foreach (var selectable in points)
             {

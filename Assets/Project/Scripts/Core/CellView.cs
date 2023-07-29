@@ -17,7 +17,7 @@ namespace Project.Scripts.Core
         [SerializeField]
         private CellContent _cellContent;
 
-        public bool Available => _cellContent?.IsSelectable ?? false;
+        public bool Walkable => _cellContent?.IsWalkable ?? true;
         public bool IsSelectable => _cellContent is ShipContent;
 
         public Vector2 Position => new Vector2(transform.position.x, transform.position.y);
@@ -38,16 +38,11 @@ namespace Project.Scripts.Core
 
         public void SetContent(CellContent content)
         {
-            if (content == null)
-            {
-                _cellContent.OnRemoved();
-                _cellContent = content;
-            }
-            else
-            {
-                _cellContent = content;
-                _cellContent.OnSpawn();
-            }
+            _cellContent?.OnRemoved();
+
+            _cellContent = content;
+
+            _cellContent?.OnSpawn();
         }
 
         public void OnTap()

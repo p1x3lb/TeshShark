@@ -45,7 +45,6 @@
      <Compile Include="Assets/Modules/Core.Common/Scopes/HashSetScope.cs" />
      <Compile Include="Assets/Project/Scripts/Infrastructure/Bootstrapper.cs" />
      <Compile Include="Assets/Project/Scripts/Core/CoreInstaller.cs" />
-     <Compile Include="Assets/Project/Scripts/Core/Content/EmptyContent.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModulePhysics2D.cs" />
      <Compile Include="Assets/Modules/Core.Common/Extensions/LinQExtensions.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/DictionaryScope.cs" />
@@ -112,11 +111,20 @@
      <Compile Include="Assets/Modules/Core.Common/Scopes/SortedDictionaryScope.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/StopwatchScope.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleAudio.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Content/LemurContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Content/TorchContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Content/BarrelContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Content/FoodContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Content/BaseShipContent.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Content/EnemyShip.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Modules/PlayerRecord" />
+     <Folder Include="Assets/Project/GameAssets/Prefabs" />
+     <Folder Include="Assets\Project\Scripts\Core\Bonuses" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
+     <Folder Include="Assets/Project/GameAssets/Levels" />
      <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/Project" />
      <Folder Include="Assets/Modules/DOTweenPro" />
@@ -127,7 +135,6 @@
      <Folder Include="Assets/Project/Art/Stickman" />
      <Folder Include="Assets/Project/Scripts/Infrastructure/ECS" />
      <Folder Include="Assets/AddressableAssetsData/DataBuilders" />
-     <Folder Include="Assets/Project/Scripts/Core" />
      <Folder Include="Assets/Project/Scripts/Meta" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Config" />
      <None Include="Assets/Modules/Sirenix/Assemblies/link.xml" />
@@ -168,6 +175,7 @@
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
      <Folder Include="Assets/Project/Scripts/Infrastructure" />
+     <Folder Include="Assets/Project/GameAssets/Content" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" />
      <None Include="Assets/Modules/DOTweenPro/readme.txt" />
      <Folder Include="Assets/Project/GameAssets" />
@@ -175,7 +183,9 @@
      <Folder Include="Assets/Modules/PlayerRecord/Zenject" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Config/Resources" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <Folder Include="Assets/Project/GameAssets/Windows" />
      <Folder Include="Assets/AddressableAssetsData/AssetGroupTemplates" />
+     <Folder Include="Assets/Project/GameAssets/Configs" />
      <None Include="Assets/Modules/DemiLib/Core/DemiLib.xml" />
      <Folder Include="Assets/Modules/PlayerRecord/Runtime" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" />

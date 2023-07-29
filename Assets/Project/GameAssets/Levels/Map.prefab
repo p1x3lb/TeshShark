@@ -2441,10 +2441,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 106797159779941036}
     m_Modifications:
-    - target: {fileID: 595083670553072294, guid: 83b3776f58dda477ca22af578c51c4a8, type: 3}
-      propertyPath: _swimDuration
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 595083670553072344, guid: 83b3776f58dda477ca22af578c51c4a8, type: 3}
       propertyPath: m_RootOrder
       value: 6

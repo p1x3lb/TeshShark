@@ -22,10 +22,14 @@ namespace Project.Scripts.Infrastructure
         private int _stepCount;
 
         [SerializeField]
+        private int _speed;
+
+        [SerializeField]
         private GameObject _mapPrefab;
 
         public int StepCount => _stepCount;
 
         public GameObject MapPrefab => _mapPrefab;
+        public int Speed => _speed;
     }
 }
