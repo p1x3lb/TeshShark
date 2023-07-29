@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595083670553072344}
-  - component: {fileID: 8354315401156500335}
+  - component: {fileID: 4722927389090998838}
   m_Layer: 0
-  m_Name: RockContent
+  m_Name: BottleContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8354315401156500335
+--- !u!114 &4722927389090998838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 595083670553072347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7df7a4bcc8094785876e863a628b60f7, type: 3}
+  m_Script: {fileID: 11500000, guid: cd90df1e77584a768f757469fa7243f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &595083671789565077
@@ -118,7 +118,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d12e4dee443a3ae44bd994ac154a28f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
