@@ -46,8 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc2cf02b8b64d7a995d509379678f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
-  _damage: 1
   _swimDuration: 0.3
   _health: 1
   _speed: 1
@@ -78,7 +76,7 @@ Transform:
   m_GameObject: {fileID: 595083671789565077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595083670553072344}
@@ -150,6 +148,14 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
       propertyPath: m_LocalPosition.x
