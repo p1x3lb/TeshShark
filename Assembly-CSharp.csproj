@@ -119,6 +119,7 @@
      <Compile Include="Assets/Project/Scripts/Features/Goals/GoalsManager.cs" />
      <Compile Include="Assets/Project/Scripts/Features/Goals/GoalConfig.cs" />
      <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/EnemyGoal.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Field/BfsShortestPath.cs" />
      <Compile Include="Assets/Project/Scripts/Core/Field/Content/RockContent.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Modules/PlayerRecord" />

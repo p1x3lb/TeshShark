@@ -50,17 +50,15 @@ namespace Project.Scripts.Core
         {
         }
 
-        public async UniTask Travel(ShipContent ship, CancellationToken cancellationToken)
+        public async UniTask Travel(BaseShipContent ship, CancellationToken cancellationToken)
         {
-            Clear();
             await ship.Travel(Position, cancellationToken);
-            SetContent(null);
         }
 
         public bool IsClose(CellView last)
         {
             var lastPosition = Position - last.Position;
-            return lastPosition.x <= 1 && lastPosition.y <= 1;
+            return Mathf.Abs(lastPosition.x) <= 1 && Mathf.Abs(lastPosition.y) <= 1;
         }
     }
 }
