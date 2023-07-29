@@ -41,14 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs" />
-     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs" />
      <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs" />
-     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs" />
      <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs" />
-     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs" />
      <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs" />
      <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs" />
+     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs" />
+     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs" />
+     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs" />
+     <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs" />
      <Compile Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor" />
      <None Include="Assets/Modules/Sirenix/Odin Inspector/Scripts/Editor/Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" />

@@ -41,27 +41,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/Commands/Core/ICommandInfo.cs" />
      <Compile Include="Assets/Modules/Commands/Core/ICommandBinding.cs" />
-     <Compile Include="Assets/Modules/Commands/Core/ICommandBinder.cs" />
      <Compile Include="Assets/Modules/Commands/ExecutableQueue/IQueuedCommand.cs" />
      <Compile Include="Assets/Modules/Commands/Core/Impl/CommandBinder.cs" />
      <Compile Include="Assets/Modules/Commands/Core/Impl/CommandBinding.cs" />
      <Compile Include="Assets/Modules/Commands/Core/Impl/CommandExecutor.cs" />
      <Compile Include="Assets/Modules/Commands/Exception/NoSuchCommandException.cs" />
-     <Compile Include="Assets/Modules/Commands/Core/Impl/CommandInfo.cs" />
      <Compile Include="Assets/Modules/Commands/ExecutableQueue/Impl/QueuedCommand.cs" />
-     <Compile Include="Assets/Modules/Commands/ExecutableQueue/ICommandQueueFactory.cs" />
      <Compile Include="Assets/Modules/Commands/Core/ICommandFactory.cs" />
-     <Compile Include="Assets/Modules/Commands/Core/Impl/CommandFactory.cs" />
      <Compile Include="Assets/Modules/Commands/Core/ICommandExecutor.cs" />
-     <Compile Include="Assets/Modules/Commands/ExecutableQueue/Impl/CommandQueueFactory.cs" />
      <Compile Include="Assets/Modules/Commands/Installers/CommandsInstaller.cs" />
-     <Compile Include="Assets/Modules/Commands/ExecutableQueue/Impl/CommandQueue.cs" />
      <Compile Include="Assets/Modules/Commands/ExecutableQueue/IPriorityQueue.cs" />
      <Compile Include="Assets/Modules/Commands/BaseCommands/IExecutableCommand.cs" />
      <Compile Include="Assets/Modules/Commands/ExecutableQueue/ICommandQueue.cs" />
      <Compile Include="Assets/Modules/Commands/BaseCommands/Command.cs" />
+     <Compile Include="Assets/Modules/Commands/Core/ICommandInfo.cs" />
+     <Compile Include="Assets/Modules/Commands/Core/ICommandBinder.cs" />
+     <Compile Include="Assets/Modules/Commands/Core/Impl/CommandInfo.cs" />
+     <Compile Include="Assets/Modules/Commands/ExecutableQueue/ICommandQueueFactory.cs" />
+     <Compile Include="Assets/Modules/Commands/Core/Impl/CommandFactory.cs" />
+     <Compile Include="Assets/Modules/Commands/ExecutableQueue/Impl/CommandQueueFactory.cs" />
+     <Compile Include="Assets/Modules/Commands/ExecutableQueue/Impl/CommandQueue.cs" />
      <Compile Include="Assets/Modules/Commands/ExecutableQueue/Impl/PriorityQueue.cs" />
      <Folder Include="Assets/Modules/Commands/Exception" />
      <Folder Include="Assets/Modules/Commands/BaseCommands" />

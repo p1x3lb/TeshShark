@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/NavMeshComponents/Scripts/NavMeshLink.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" />
+     <Compile Include="Assets/Modules/NavMeshComponents/Scripts/NavMeshLink.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Scripts/NavMeshSurface.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Scripts/NavMeshModifier.cs" />
      <None Include="Assets/Modules/NavMeshComponents/Scripts/NavMeshComponents.asmdef" />

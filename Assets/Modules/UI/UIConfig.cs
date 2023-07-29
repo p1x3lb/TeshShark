@@ -16,22 +16,24 @@ namespace UI
         [UsedImplicitly]
         public static readonly List<string> WINDOWS = new();
 
+        public GameObject GetWindowPrefab<T>() where T : Window
+        {
+            return _configs.FirstOrDefault(config => config.Window == typeof(T).Name)?.Prefab;
+        }
+
 #if UNITY_EDITOR
         static UIConfig()
         {
             foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
-                foreach (var type in assembly.GetTypes().Where(x => !x.IsAbstract && typeof(Window<>).IsAssignableFrom(x)))
+                foreach (var type in assembly.GetTypes().Where(x => !x.IsAbstract && typeof(Window).IsAssignableFrom(x)))
                 {
                     WINDOWS.Add(type.Name);
                 }
             }
         }
+
 #endif
-        public GameObject GetWindowPrefab<T>() where T : Window
-        {
-            return _configs.FirstOrDefault(config => config.Window == typeof(T).Name)?.Prefab;
-        }
     }
 
     [Serializable]

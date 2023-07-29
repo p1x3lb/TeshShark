@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 namespace Project.Scripts.Infrastructure
@@ -17,7 +17,7 @@ namespace Project.Scripts.Infrastructure
         bool TrySelect();
     }
 
-    public class InputManager : ITickable, IInitializable
+    public class InputManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler, IInitializable
     {
         private readonly List<ISelectable> _selected = new();
 
@@ -32,42 +32,15 @@ namespace Project.Scripts.Infrastructure
             _camera = Camera.current;
         }
 
-        void ITickable.Tick()
+        public void OnDrag(PointerEventData eventData)
         {
-            var touchesLength = Input.touches.Length;
-            if (touchesLength == 0)
+            if (!_selecting || Input.touches.Length != 1) return;
+
+            var size = Physics2D.RaycastNonAlloc(_camera.ScreenToWorldPoint(eventData.position), Vector2.zero, _results);
+
+            if (size == 0)
             {
-                if (_isTouching)
-                {
-                    OnPointUp();
-                }
-
-                _isTouching = false;
-                return;
             }
-
-            if (touchesLength > 1) return;
-
-            var touch = Input.touches[0];
-
-            if (!_isTouching)
-            {
-                OnPointDown(touch.position);
-                return;
-            }
-
-            OnPointMove(touch.position);
-
-            _isTouching = true;
-        }
-
-        private void OnPointMove(Vector2 touchPosition)
-        {
-            if (!_selecting) return;
-
-            var size = Physics2D.RaycastNonAlloc(_camera.ScreenToWorldPoint(touchPosition), Vector2.zero, _results);
-
-            if (size == 0) { }
 
             for (var i = 0; i < size; i++)
             {
@@ -81,6 +54,7 @@ namespace Project.Scripts.Infrastructure
                     {
                         _selected[j].Clear();
                     }
+
                     _selected.RemoveRange(index, _selected.Count - index);
                     _lastSelected = selectable;
                     return;
@@ -91,9 +65,11 @@ namespace Project.Scripts.Infrastructure
             }
         }
 
-        private void OnPointDown(Vector2 touchPosition)
+        public void OnPointerDown(PointerEventData eventData)
         {
-            var size = Physics2D.RaycastNonAlloc(_camera.ScreenToWorldPoint(touchPosition), Vector2.zero, _results);
+            if (Input.touches.Length != 1) return;
+
+            var size = Physics2D.RaycastNonAlloc(_camera.ScreenToWorldPoint(eventData.position), Vector2.zero, _results);
 
             for (var i = 0; i < size; i++)
             {
@@ -104,20 +80,22 @@ namespace Project.Scripts.Infrastructure
             }
         }
 
-        private void OnPointUp()
+        public void OnPointerUp(PointerEventData eventData)
         {
+            if (Input.touches.Length != 0) return;
+
             foreach (var selectable in _selected)
             {
                 Process(selectable);
                 selectable.Clear();
             }
+
             _lastSelected = null;
             _selecting = false;
         }
 
         private void Process(ISelectable selectable)
         {
-
         }
     }
 }

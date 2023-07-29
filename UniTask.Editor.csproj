@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/UniTask/Editor/UniTaskTrackerWindow.cs" />
      <Compile Include="Assets/Modules/UniTask/Editor/SplitterGUILayout.cs" />
+     <Compile Include="Assets/Modules/UniTask/Editor/UniTaskTrackerWindow.cs" />
      <Compile Include="Assets/Modules/UniTask/Editor/UniTaskTrackerTreeView.cs" />
      <None Include="Assets/Modules/UniTask/Editor/UniTask.Editor.asmdef" />
      <Folder Include="Assets/Modules/UniTask/Editor" />

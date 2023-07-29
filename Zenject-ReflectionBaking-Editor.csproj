@@ -41,15 +41,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Common/ReflectionBakingModuleEditor.cs" />
-     <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ReflectionBakingMenuItems.cs" />
      <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ReflectionBakingInternalUtil.cs" />
      <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/AssemblyPathRegistry.cs" />
      <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/UnityAssemblyResolver.cs" />
-     <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ZenjectReflectionBakingSettingsEditor.cs" />
      <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Common/CecilExtensions.cs" />
      <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ReflectionBakingBuildObserver.cs" />
      <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ZenjectReflectionBakingSettings.cs" />
+     <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Common/ReflectionBakingModuleEditor.cs" />
+     <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ReflectionBakingMenuItems.cs" />
+     <Compile Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Unity/ZenjectReflectionBakingSettingsEditor.cs" />
      <Folder Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking" />
      <None Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking-Editor.asmdef" />
      <Folder Include="Assets/Modules/Zenject/OptionalExtras/ReflectionBaking/Lib" />

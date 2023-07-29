@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d9963ccff24b6aa692fd91f0dd4ae2, type: 3}
   m_Name: LevelListConfig
   m_EditorClassIdentifier: 
-  _levels: []
+  _levels:
+  - _stepCount: 15
+    _mapPrefab: {fileID: 0}

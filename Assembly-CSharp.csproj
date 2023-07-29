@@ -42,82 +42,86 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Modules/DOTweenPro/DOTweenProShortcuts.cs" />
-     <Compile Include="Assets/Project/Scripts/Infrastructure/ECS/Entity.cs" />
-     <Compile Include="Assets/Modules/DOTweenPro/DOTweenTextMeshPro.cs" />
-     <Compile Include="Assets/Modules/Items/Runtime/ItemReference.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/HashSetScope.cs" />
-     <Compile Include="Assets/Project/Scripts/Infrastructure/ApplicationInstaller.cs" />
-     <Compile Include="Assets/Modules/Core.Common/Extensions/UniTaskExtensions.cs" />
-     <Compile Include="Assets/Project/Scripts/Commands/LocationModel.cs" />
-     <Compile Include="Assets/Modules/Core.Common/Scopes/ListScope.cs" />
      <Compile Include="Assets/Project/Scripts/Infrastructure/Bootstrapper.cs" />
      <Compile Include="Assets/Project/Scripts/Core/CoreInstaller.cs" />
-     <Compile Include="Assets/Modules/Core.Common/Persistent.cs" />
-     <Compile Include="Assets/Project/Scripts/Commands/LocationConfig.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModulePhysics2D.cs" />
      <Compile Include="Assets/Modules/Core.Common/Extensions/LinQExtensions.cs" />
-     <Compile Include="Assets/Modules/DOTweenPro/DOTweenAnimation.cs" />
-     <Compile Include="Assets/Modules/DOTweenPro/DOTweenTk2d.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/DictionaryScope.cs" />
      <Compile Include="Assets/Modules/PlayerRecord/Runtime/Profile.cs" />
-     <Compile Include="Assets/Modules/PlayerRecord/Runtime/ProfileManager.cs" />
-     <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets/Modules/Items/Runtime/Transaction.cs" />
      <Compile Include="Assets/Project/Scripts/Infrastructure/ECS/EcsManager.cs" />
-     <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleUtils.cs" />
      <Compile Include="Assets/Modules/Core.Common/Extensions/SceneExtensions.cs" />
-     <Compile Include="Assets/Modules/Items/Runtime/ItemConfig.cs" />
-     <Compile Include="Assets/Modules/Core.Common/Extensions/EnumComparator.cs" />
+     <Compile Include="Assets/Project/Scripts/Infrastructure/ECS/IComponent.cs" />
+     <Compile Include="Assets/Modules/UI/UIConfig.cs" />
      <Compile Include="Assets/Modules/Core.Common/Extensions/HitExtensions.cs" />
-     <Compile Include="Assets/Project/Scripts/Core/CoreStateContext.cs" />
      <Compile Include="Assets/Modules/Core.Common/AssetReference.cs" />
      <Compile Include="Assets/Modules/Items/Runtime/ItemManager.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/StringBuilderScope.cs" />
-     <Compile Include="Assets/Project/Scripts/Core/CoreState.cs" />
      <Compile Include="Assets/Modules/Items/Runtime/IItemProvider.cs" />
-     <Compile Include="Assets/Modules/Items/Runtime/DefaultItemProvider.cs" />
      <Compile Include="Assets/Project/Scripts/Core/CoreEcsManager.cs" />
      <Compile Include="Assets/Project/Scripts/Infrastructure/ECS/IECSManager.cs" />
-     <Compile Include="Assets/Modules/Core.Common/Scopes/PoolUtility.cs" />
+     <Compile Include="Assets/Modules/UI/WindowManager.cs" />
      <Compile Include="Assets/Modules/Core.Common/Extensions/ObjectExtensions.cs" />
+     <Compile Include="Assets/Project/Scripts/Meta/MetaState.cs" />
+     <Compile Include="Assets/Modules/Items/Runtime/IPack.cs" />
+     <Compile Include="Assets/Modules/Items/Runtime/Item.cs" />
+     <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleUI.cs" />
+     <Compile Include="Assets/Modules/PlayerRecord/Runtime/ProfileRecord.cs" />
+     <Compile Include="Assets/Modules/Items/Zenject/ItemInstaller.cs" />
+     <Compile Include="Assets/Modules/Core.Common/Extensions/VectorExtensions.cs" />
+     <Compile Include="Assets/Project/Scripts/Infrastructure/ApplicationContext.cs" />
+     <Compile Include="Assets/Project/Scripts/Infrastructure/ECS/Entity.cs" />
+     <Compile Include="Assets/Modules/DOTweenPro/DOTweenTextMeshPro.cs" />
+     <Compile Include="Assets/Modules/Items/Runtime/ItemReference.cs" />
+     <Compile Include="Assets/Project/Scripts/Infrastructure/ApplicationInstaller.cs" />
+     <Compile Include="Assets/Modules/Core.Common/Extensions/UniTaskExtensions.cs" />
+     <Compile Include="Assets/Modules/Core.Common/Scopes/ListScope.cs" />
+     <Compile Include="Assets/Modules/Core.Common/Persistent.cs" />
+     <Compile Include="Assets/Modules/UI/UIInstaller.cs" />
+     <Compile Include="Assets/Modules/DOTweenPro/DOTweenAnimation.cs" />
+     <Compile Include="Assets/Modules/DOTweenPro/DOTweenTk2d.cs" />
+     <Compile Include="Assets/Modules/PlayerRecord/Runtime/ProfileManager.cs" />
+     <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleUtils.cs" />
+     <Compile Include="Assets/Project/Scripts/Meta/MetaWindow.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/InputManager.cs" />
+     <Compile Include="Assets/Modules/Items/Runtime/ItemConfig.cs" />
+     <Compile Include="Assets/Modules/Core.Common/Extensions/EnumComparator.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/CoreStateContext.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/CoreState.cs" />
+     <Compile Include="Assets/Modules/Items/Runtime/DefaultItemProvider.cs" />
+     <Compile Include="Assets/Project/Scripts/Infrastructure/PlayerModel.cs" />
+     <Compile Include="Assets/Project/Scripts/Infrastructure/LevelListConfig.cs" />
+     <Compile Include="Assets/Modules/UI/Window.cs" />
+     <Compile Include="Assets/Modules/Core.Common/Scopes/PoolUtility.cs" />
      <Compile Include="Assets/Project/Scripts/Infrastructure/BootstrapInstaller.cs" />
      <Compile Include="Assets/Modules/Items/Runtime/ItemProfile.cs" />
-     <Compile Include="Assets/Modules/Items/Runtime/IPack.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/QueueScope.cs" />
      <Compile Include="Assets/Modules/PlayerRecord/Zenject/PlayerProfileInstaller.cs" />
      <Compile Include="Assets/Modules/Core.Common/Extensions/ColorExtenstion.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModulePhysics.cs" />
-     <Compile Include="Assets/Modules/Items/Runtime/Item.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleSprite.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/StackScope.cs" />
-     <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleUI.cs" />
-     <Compile Include="Assets/Modules/PlayerRecord/Runtime/ProfileRecord.cs" />
-     <Compile Include="Assets/Modules/Items/Zenject/ItemInstaller.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/SortedDictionaryScope.cs" />
      <Compile Include="Assets/Modules/Core.Common/Scopes/StopwatchScope.cs" />
-     <Compile Include="Assets/Modules/Core.Common/Extensions/VectorExtensions.cs" />
      <Compile Include="Assets/Modules/DOTween/Modules/DOTweenModuleAudio.cs" />
-     <Compile Include="Assets/Project/Scripts/Infrastructure/ApplicationContext.cs" />
-     <Compile Include="Assets/Project/Scripts/Meta/MetaState.cs" />
-     <Compile Include="Assets/Modules/UI/WindowManager.cs" />
-     <Compile Include="Assets/Modules/UI/UIConfig.cs" />
-     <Compile Include="Assets/Modules/UI/Window.cs" />
-     <Compile Include="Assets/Modules/UI/UIInstaller.cs" />
-     <Compile Include="Assets/Project/Scripts/Meta/MetaWindow.cs" />
-     <Compile Include="Assets/Project/Scripts/Infrastructure/PlayerModel.cs" />
-     <Compile Include="Assets/Project/Scripts/Infrastructure/LevelListConfig.cs" />
-     <Compile Include="Assets/Project/Scripts/Infrastructure/ECS/IComponent.cs" />
-     <Compile Include="Assets/Project/Scripts/Core/InputManager.cs" />
+     <Compile Include="Assets/Project/Scripts/Meta/MetaInstaller.cs" />
+     <Compile Include="Assets/Project/Scripts/Meta/MetaStateContext.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Modules/PlayerRecord" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+     <Folder Include="Assets/TextMesh Pro/Sprites" />
+     <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/Project" />
      <Folder Include="Assets/Modules/DOTweenPro" />
      <Folder Include="Assets/Modules/Core.Common/Extensions" />
      <Folder Include="Assets/Modules/DOTween" />
      <None Include="Assets/Modules/UniTask/package.json" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <Folder Include="Assets/Project/Art/Stickman" />
      <Folder Include="Assets/Project/Scripts/Infrastructure/ECS" />
-     <Folder Include="Assets/Project/Scripts/Commands" />
      <Folder Include="Assets/AddressableAssetsData/DataBuilders" />
      <Folder Include="Assets/Project/Scripts/Core" />
      <Folder Include="Assets/Project/Scripts/Meta" />
@@ -125,22 +129,39 @@
      <None Include="Assets/Modules/Sirenix/Assemblies/link.xml" />
      <Folder Include="Assets/AddressableAssetsData/AssetGroups/Schemas" />
      <Folder Include="Assets/Project/Art" />
+     <Folder Include="Assets/TextMesh Pro/Resources/Fonts &amp; Materials" />
      <Folder Include="Assets/AddressableAssetsData" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector" />
      <Folder Include="Assets/Project/GameAssets/Scenes" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+     <Folder Include="Assets/TextMesh Pro/Resources" />
      <Folder Include="Assets/Modules/Sirenix/Assemblies" />
      <Folder Include="Assets/Modules/NavMeshComponents" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.Utilities.xml" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets/Modules/DemiLib/Core" />
+     <Folder Include="Assets/TextMesh Pro" />
      <Folder Include="Assets/Project/Scripts" />
      <Folder Include="Assets/Modules/DOTween/Modules" />
      <Folder Include="Assets/Modules/Core.Common" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" />
+     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets/Modules/DemiLib" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <Folder Include="Assets/Modules/Items" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+     <Folder Include="Assets/TextMesh Pro/Shaders" />
      <None Include="Assets/Modules/Sirenix/Readme.txt" />
      <Folder Include="Assets/Modules/Core.Common/Scopes" />
      <Folder Include="Assets/Modules/Sirenix" />
+     <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
+     <Folder Include="Assets/TextMesh Pro/Fonts" />
      <Folder Include="Assets/Project/Scripts/Infrastructure" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" />
      <None Include="Assets/Modules/DOTweenPro/readme.txt" />
@@ -148,6 +169,7 @@
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Modules" />
      <Folder Include="Assets/Modules/PlayerRecord/Zenject" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Config/Resources" />
+     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <Folder Include="Assets/AddressableAssetsData/AssetGroupTemplates" />
      <None Include="Assets/Modules/DemiLib/Core/DemiLib.xml" />
      <Folder Include="Assets/Modules/PlayerRecord/Runtime" />
@@ -158,15 +180,23 @@
      <Folder Include="Assets/Resources" />
      <Folder Include="Assets/Project/Art/Stickman/Materials" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/Modules/DOTween/readme.txt" />
      <Folder Include="Assets/Modules/Sirenix/Assemblies/NoEmitAndNoEditor" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets/Modules/Sirenix/Assemblies/NoEditor" />
      <Folder Include="Assets/Modules/UI" />
      <Folder Include="Assets/Modules/Items/Zenject" />
+     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Config/Resources/Sirenix" />
+     <Folder Include="Assets/TextMesh Pro/Documentation" />
      <None Include="Assets/Resources/BillingMode.json" />
      <Folder Include="Assets/Modules/Items/Runtime" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
      <Folder Include="Assets/Modules" />
+     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
      <Folder Include="Assets/Modules/UniTask" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -873,14 +903,17 @@
      <Reference Include="UnityEngine.Purchasing">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.CacheServer">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+     <Reference Include="PsdPlugin">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
      </Reference>
      <Reference Include="Leopotam.Ecs.UnityIntegration">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Leopotam.Ecs.UnityIntegration.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.CacheServer">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Addressables">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
@@ -896,6 +929,9 @@
      </Reference>
      <Reference Include="UnityEngine.Advertisements">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.IK.Editor">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Path.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
@@ -921,6 +957,9 @@
      <Reference Include="Unity.Analytics.DataPrivacy">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.IK.Runtime">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
@@ -941,6 +980,9 @@
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Editor">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
@@ -971,6 +1013,9 @@
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Psdimporter.Editor">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.001">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
@@ -1011,6 +1056,9 @@
      <Reference Include="Unity.Services.Core.Environments">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.Animation.Runtime">
+     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
@@ -1049,24 +1097,6 @@
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
      <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.IK.Editor">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.IK.Runtime">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Runtime">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="PsdPlugin">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Psdimporter.Editor">
-     <HintPath>/Users/aliaksandr_belka_games/Game copy/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

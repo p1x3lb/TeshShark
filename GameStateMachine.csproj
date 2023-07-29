@@ -41,11 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/GameStateMachine/IGameState.cs" />
      <Compile Include="Assets/Modules/GameStateMachine/IGameStateMachine.cs" />
+     <Compile Include="Assets/Modules/GameStateMachine/IGameStateContext.cs" />
+     <Compile Include="Assets/Modules/GameStateMachine/IGameState.cs" />
      <Compile Include="Assets/Modules/GameStateMachine/GameStateMachineInstaller.cs" />
      <Compile Include="Assets/Modules/GameStateMachine/GameStateMachine.cs" />
-     <Compile Include="Assets/Modules/GameStateMachine/IGameStateContext.cs" />
      <None Include="Assets/Modules/GameStateMachine/GameStateMachine.asmdef" />
      <Folder Include="Assets/Modules/GameStateMachine" />
      <Reference Include="UnityEngine">

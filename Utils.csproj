@@ -41,24 +41,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/Utils/Editor/ReadOnly.cs" />
-     <Compile Include="Assets/Modules/Utils/UI/LayoutListUtil/LayoutListPool.cs" />
-     <Compile Include="Assets/Modules/Utils/UI/Lable/LeadingLabele.cs" />
      <Compile Include="Assets/Modules/Utils/Editor/DataCleaner.cs" />
      <Compile Include="Assets/Modules/Utils/Pool/IPoolItem.cs" />
-     <Compile Include="Assets/Modules/Utils/InRangeWatcher/IInRangeObservable.cs" />
-     <Compile Include="Assets/Modules/Utils/Editor/SceneConfig.cs" />
      <Compile Include="Assets/Modules/Utils/Factory/IFactory.cs" />
      <Compile Include="Assets/Modules/Utils/Pool/DefaultMonoBehaviourPool.cs" />
-     <Compile Include="Assets/Modules/Utils/InRangeWatcher/BaseInRangeWatcher.cs" />
-     <Compile Include="Assets/Modules/Utils/UI/ActionPanel.cs" />
-     <Compile Include="Assets/Modules/Utils/Pool/IPool.cs" />
      <Compile Include="Assets/Modules/Utils/UI/LayoutListUtil/LayoutList.cs" />
      <Compile Include="Assets/Modules/Utils/Pool/AbstractPool.cs" />
      <Compile Include="Assets/Modules/Utils/Pool/PoolItem.cs" />
      <Compile Include="Assets/Modules/Utils/Editor/StartUpStarter.cs" />
-     <Compile Include="Assets/Modules/Utils/UI/LayoutListUtil/LayoutListItem.cs" />
      <Compile Include="Assets/Modules/Utils/Pool/ObjectPoolItem.cs" />
+     <Compile Include="Assets/Modules/Utils/Editor/ReadOnly.cs" />
+     <Compile Include="Assets/Modules/Utils/UI/LayoutListUtil/LayoutListPool.cs" />
+     <Compile Include="Assets/Modules/Utils/UI/Lable/LeadingLabele.cs" />
+     <Compile Include="Assets/Modules/Utils/InRangeWatcher/IInRangeObservable.cs" />
+     <Compile Include="Assets/Modules/Utils/Editor/SceneConfig.cs" />
+     <Compile Include="Assets/Modules/Utils/InRangeWatcher/BaseInRangeWatcher.cs" />
+     <Compile Include="Assets/Modules/Utils/UI/ActionPanel.cs" />
+     <Compile Include="Assets/Modules/Utils/Pool/IPool.cs" />
+     <Compile Include="Assets/Modules/Utils/UI/LayoutListUtil/LayoutListItem.cs" />
      <Folder Include="Assets/Modules/Utils" />
      <Folder Include="Assets/Modules/Utils/InRangeWatcher" />
      <Folder Include="Assets/Modules/Utils/Pool" />

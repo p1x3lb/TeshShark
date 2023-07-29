@@ -11,7 +11,7 @@ namespace Project.Scripts.Infrastructure
 
         public LevelConfig GetLevel(int index)
         {
-            return _levels[index % _levels.Length];
+            return _levels.Length == 0 ? null : _levels[index % _levels.Length];
         }
     }
 

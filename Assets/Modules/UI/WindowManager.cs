@@ -12,12 +12,16 @@ namespace UI
         [Inject]
         private UIConfig UIConfig { get; }
 
-        [Inject]
-        private Transform Root { get; }
+        private Transform _root;
+
+        public void Initialize(Transform root)
+        {
+            _root = root;
+        }
 
         public UniTask ShowWindow<T>(WindowModel model) where T : Window
         {
-            var window = Container.InstantiatePrefabForComponent<T>(UIConfig.GetWindowPrefab<T>(), Root);
+            var window = Container.InstantiatePrefabForComponent<T>(UIConfig.GetWindowPrefab<T>(), _root);
             window.Initialize(model);
             return UniTask.CompletedTask;
         }

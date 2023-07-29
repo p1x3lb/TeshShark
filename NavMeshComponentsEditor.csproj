@@ -41,11 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" />
-     <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshAssetManager.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshModifierEditor.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" />
+     <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" />
+     <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshAssetManager.cs" />
      <Compile Include="Assets/Modules/NavMeshComponents/Editor/NavMeshLinkEditor.cs" />
      <Folder Include="Assets/Modules/NavMeshComponents/Editor" />
      <None Include="Assets/Modules/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef" />
