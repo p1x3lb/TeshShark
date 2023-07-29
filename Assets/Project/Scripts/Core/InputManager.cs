@@ -43,6 +43,8 @@ namespace Project.Scripts.Infrastructure
                 var hit = _results[i];
                 if (!hit.collider.TryGetComponent(out CellView selectable) || !selectable.Available) continue;
 
+                Debug.Log($"{hit.transform.parent.name} {hit.collider.name} ");
+
                 if (!_selected.Contains(selectable))
                 {
                     var last = _selected.Last();
@@ -120,17 +122,26 @@ namespace Project.Scripts.Infrastructure
 
         private async UniTask Travel(ShipContent ship, List<CellView> points)
         {
+            IsLocked = true;
+
             CoreStateContext.StepsLeft--;
 
             for (var i = 1; i < points.Count; i++)
             {
-                await _selected[i].Travel(ship, default);
+                await points[i].Travel(ship, default);
+
+                foreach (var cell in CoreStateContext.Cells.Except(points).Where(cell => cell.IsClose(points[i])))
+                {
+                    cell.ProcessClose();
+                }
             }
 
-            foreach (var selectable in _selected)
+            foreach (var selectable in points)
             {
                 selectable.Clear();
             }
+
+            IsLocked = false;
         }
     }
 }

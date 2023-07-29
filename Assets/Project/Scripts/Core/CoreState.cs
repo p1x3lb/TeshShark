@@ -27,8 +27,10 @@ namespace Project.Scripts.Core
             WindowManager.Initialize(scene.FindComponentInRootObjects<Canvas>().transform);
 
             var context = scene.GetSceneContext<CoreStateContext>();
-            context.Initialize();
+
             var map = context.Container.InstantiatePrefab(context.Level.MapPrefab);
+
+            context.Initialize(map.GetComponentsInChildren<CellView>());
         }
 
         public void Dispose()

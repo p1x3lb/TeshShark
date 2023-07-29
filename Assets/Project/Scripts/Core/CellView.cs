@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -37,14 +38,14 @@ namespace Project.Scripts.Core
 
         public void SetContent(CellContent content)
         {
-            _cellContent = content;
-
             if (content == null)
             {
                 _cellContent.OnRemoved();
+                _cellContent = content;
             }
             else
             {
+                _cellContent = content;
                 _cellContent.OnSpawn();
             }
         }
@@ -55,21 +56,22 @@ namespace Project.Scripts.Core
 
         public void SetNext(CellView selectable)
         {
-
         }
 
-        public UniTask Travel(ShipContent ship, CancellationToken cancellationToken)
+        public async UniTask Travel(ShipContent ship, CancellationToken cancellationToken)
         {
-            return UniTask.CompletedTask;
-        }
-
-        public void OnProcessedClose()
-        {
+            await ship.Travel(Position, cancellationToken);
+            SetContent(null);
         }
 
         public bool IsClose(CellView last)
         {
             return (Position - last.Position).magnitude <= 1;
+        }
+
+        public void ProcessClose()
+        {
+
         }
     }
 }

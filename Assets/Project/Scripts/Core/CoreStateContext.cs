@@ -19,10 +19,11 @@ namespace Project.Scripts.Core
 
         public LevelConfig Level => LevelListConfig.GetLevel(PlayerModel.PlayerLevel);
         public int StepsLeft { get; set; }
-        public List<CellView> _cells;
+        public IReadOnlyList<CellView> Cells { get; private set; }
 
-        public void Initialize()
+        public void Initialize(IReadOnlyList<CellView> cells)
         {
+            Cells = cells;
             StepsLeft = Level.StepCount;
         }
     }
