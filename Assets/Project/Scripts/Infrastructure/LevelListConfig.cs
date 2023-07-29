@@ -30,10 +30,16 @@ namespace Project.Scripts.Infrastructure
         private int _damage = 2;
 
         [SerializeField]
+        private int _columns = 6;
+
+        [SerializeField]
+        private int _rows = 6;
+
+        [SerializeField]
         private GameObject _mapPrefab;
 
         [SerializeReference]
-        private List<IGoal> _goalConfigs;
+        private List<IGoal> _goalConfigs = new();
 
         public int StepCount => _stepCount;
         public int Speed => _speed;
@@ -41,5 +47,7 @@ namespace Project.Scripts.Infrastructure
 
         public GameObject MapPrefab => _mapPrefab;
         public IReadOnlyList<IGoal> Goals => _goalConfigs;
+        public int Rows => _rows;
+        public int Columns => _columns;
     }
 }

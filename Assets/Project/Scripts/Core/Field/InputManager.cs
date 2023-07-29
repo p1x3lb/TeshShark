@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
+using Common.Scopes;
 using Cysharp.Threading.Tasks;
 using Project.Scripts.Core;
+using Project.Scripts.Core.Field;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;
@@ -27,6 +30,9 @@ namespace Project.Scripts.Infrastructure
         private CellView _lastSelected;
         private readonly RaycastHit2D[] _results = new RaycastHit2D[5];
         private CancellationTokenSource _cancellationTokenSource;
+        private BfsShortestPath _bgsShortPath;
+
+        public BfsShortestPath BfsShortestPath => _bgsShortPath ??= new BfsShortestPath(CoreStateContext.Cells);
 
         public bool IsLocked { get; set; }
 
@@ -142,7 +148,6 @@ namespace Project.Scripts.Infrastructure
 
         #endregion
 
-
         private async UniTask ProcessTurn(ShipContent ship, List<CellView> points)
         {
             IsLocked = true;
@@ -150,18 +155,97 @@ namespace Project.Scripts.Infrastructure
             CoreStateContext.StepsLeft--;
 
             await ProcessPlayerStep(ship, points);
-
+            await ProcessShipsStep();
 
             IsLocked = false;
+        }
+
+        private async UniTask ProcessShipsStep()
+        {
+            Find<ShipContent>(out var column, out var row);
+
+            var cellViews = CoreStateContext.CellsEnumerable.Where(cell => cell.Content is EnemyShipContent enemyShipContent).ToList();
+            foreach (var cell in cellViews)
+            {
+                var enemyShipContent = cell.Content as EnemyShipContent;
+
+                Find(cell, out var currColumn, out var currRow);
+
+                var path = BfsShortestPath.FindShortestPath(currRow, currColumn, row, column);
+
+                CellView endCell = null;
+
+                for (int i = 1; i < enemyShipContent.Speed + 1 && i < path.Count - 1; i++)
+                {
+                    var (x, y) = path[i];
+                    endCell = CoreStateContext.Cells[x, y];
+                    await endCell.Travel(enemyShipContent, _cancellationTokenSource.Token);
+                }
+
+                if (endCell != null)
+                {
+                    cell.SetContent(null);
+                    endCell.SetContent(enemyShipContent);
+
+                    if (CoreStateContext.Cells[column, row].IsClose(endCell) && !CoreStateContext.ApplyTurn(enemyShipContent.Damage))
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+
+        private bool Find(CellView cellView, out int column, out int row)
+        {
+            var cells = CoreStateContext.Cells;
+            for (int i = 0; i < cells.GetLength(0); i++)
+            {
+                for (int j = 0; j < cells.GetLength(1); j++)
+                {
+                    if (cells[i, j] == cellView)
+                    {
+                        column = j;
+                        row = i;
+                        return true;
+                    }
+                }
+            }
+
+            row = 0;
+            column = 0;
+            return false;
+        }
+
+        private bool Find<T>(out int column, out int row)
+        {
+            var cells = CoreStateContext.Cells;
+            for (int i = 0; i < cells.GetLength(0); i++)
+            {
+                for (int j = 0; j < cells.GetLength(1); j++)
+                {
+                    if (cells[i, j].Content is T)
+                    {
+                        column = j;
+                        row = i;
+                        return true;
+                    }
+                }
+            }
+
+            row = 0;
+            column = 0;
+            return false;
         }
 
         private async UniTask ProcessPlayerStep(ShipContent ship, List<CellView> points)
         {
             for (var i = 1; i < points.Count; i++)
             {
+                points[i].Clear();
                 await points[i].Travel(ship, _cancellationTokenSource.Token);
+                points[i].SetContent(null);
 
-                foreach (var cell in CoreStateContext.Cells.Except(points).Where(cell => cell.Content != null && cell.IsClose(points[i])))
+                foreach (var cell in CoreStateContext.CellsEnumerable.Except(points).Where(cell => cell.Content != null && cell.IsClose(points[i])))
                 {
                     ship.Process(cell);
                 }

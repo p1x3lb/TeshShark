@@ -7,7 +7,7 @@ namespace Project.Scripts.Core
         [Inject]
         private CoreStateContext CoreStateContext { get; }
 
-        public override bool IsWalkable => false;
+        public override bool IsWalkable => true;
 
         public void Process(CellView cell)
         {
@@ -16,6 +16,7 @@ namespace Project.Scripts.Core
                 case EnemyShipContent enemyShip:
                     if (enemyShip.TryDamage(CoreStateContext.Damage))
                     {
+                        enemyShip.DestroyShip();
                         cell.SetContent(null);
                     }
                     break;
