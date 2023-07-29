@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using Common.Scopes;
 using Cysharp.Threading.Tasks;
 using Project.Scripts.Core;
 using UnityEngine;
@@ -38,8 +37,8 @@ namespace Project.Scripts.Infrastructure
 
         public void Dispose()
         {
-            _cancellationTokenSource.Cancel();
-            _cancellationTokenSource.Dispose();
+            _cancellationTokenSource?.Cancel();
+            _cancellationTokenSource?.Dispose();
             _cancellationTokenSource = null;
         }
 
@@ -62,12 +61,10 @@ namespace Project.Scripts.Infrastructure
                 var hit = _results[i];
                 if (!hit.collider.TryGetComponent(out CellView selectable)) continue;
 
-                Debug.Log($"{hit.transform.parent.name} {hit.collider.name} ");
-
-                if (!_selected.Contains(selectable) && selectable.Walkable && CoreStateContext.Speed > _selected.Count - 1)
+                if (!_selected.Contains(selectable))
                 {
                     var last = _selected.Last();
-                    if (selectable.IsClose(last))
+                    if (selectable.IsClose(last) && selectable.Walkable && CoreStateContext.Speed > _selected.Count - 1)
                     {
                         last.SetNext(selectable);
                         selectable.Select();

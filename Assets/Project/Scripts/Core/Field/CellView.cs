@@ -59,7 +59,8 @@ namespace Project.Scripts.Core
 
         public bool IsClose(CellView last)
         {
-            return (Position - last.Position).magnitude <= 1;
+            var lastPosition = Position - last.Position;
+            return lastPosition.x <= 1 && lastPosition.y <= 1;
         }
     }
 }

@@ -175,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
 --- !u!114 &8870952024104061312
 MonoBehaviour:
@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _arrows: {fileID: 8405116435978072551}
+  _cellContent: {fileID: 0}
 --- !u!1 &8870952024403900712
 GameObject:
   m_ObjectHideFlags: 0

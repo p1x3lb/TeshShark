@@ -119,6 +119,7 @@
      <Compile Include="Assets/Project/Scripts/Features/Goals/GoalsManager.cs" />
      <Compile Include="Assets/Project/Scripts/Features/Goals/GoalConfig.cs" />
      <Compile Include="Assets/Project/Scripts/Features/Goals/Impl/EnemyGoal.cs" />
+     <Compile Include="Assets/Project/Scripts/Core/Field/Content/RockContent.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Modules/PlayerRecord" />
      <Folder Include="Assets/Project/GameAssets/Prefabs" />
@@ -132,6 +133,7 @@
      <Folder Include="Assets/Modules/Core.Common/Extensions" />
      <Folder Include="Assets/Modules/DOTween" />
      <None Include="Assets/Modules/UniTask/package.json" />
+     <Folder Include="Assets/Project/Art/Shaders" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <Folder Include="Assets/Project/Art/Stickman" />
      <Folder Include="Assets/Project/Scripts/Infrastructure/ECS" />
@@ -139,6 +141,7 @@
      <Folder Include="Assets/Project/Scripts/Core" />
      <Folder Include="Assets/Project/Scripts/Meta" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Config" />
+     <Folder Include="Assets/Project/Art/Environment" />
      <None Include="Assets/Modules/Sirenix/Assemblies/link.xml" />
      <Folder Include="Assets/AddressableAssetsData/AssetGroups/Schemas" />
      <Folder Include="Assets/Project/Art" />
@@ -161,12 +164,14 @@
      <Folder Include="Assets/Project/Scripts" />
      <Folder Include="Assets/Modules/DOTween/Modules" />
      <Folder Include="Assets/Modules/Core.Common" />
+     <Folder Include="Assets/Project/Art/Atlas" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets/Modules/DemiLib" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <Folder Include="Assets/Project/Art/Normals" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <Folder Include="Assets/Modules/Items" />
@@ -175,9 +180,11 @@
      <Folder Include="Assets/TextMesh Pro/Shaders" />
      <None Include="Assets/Modules/Sirenix/Readme.txt" />
      <Folder Include="Assets/Modules/Core.Common/Scopes" />
+     <Folder Include="Assets/Project/Art/Particles" />
      <Folder Include="Assets/Modules/Sirenix" />
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
+     <Folder Include="Assets/Project/Art/Water" />
      <Folder Include="Assets/Project/Scripts/Infrastructure" />
      <Folder Include="Assets/Project/GameAssets/Content" />
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" />
@@ -202,7 +209,7 @@
      <None Include="Assets/Modules/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/Modules/DOTween/readme.txt" />
-     <Folder Include="Assets/Project/Scripts/Core/Field/Bonuses" />
+     <Folder Include="Assets/Project/Art/Ship" />
      <Folder Include="Assets/Modules/Sirenix/Assemblies/NoEmitAndNoEditor" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
@@ -213,6 +220,7 @@
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <Folder Include="Assets/Modules/Sirenix/Odin Inspector/Config/Resources/Sirenix" />
      <Folder Include="Assets/TextMesh Pro/Documentation" />
+     <Folder Include="Assets/Project/Art/Materials" />
      <None Include="Assets/Resources/BillingMode.json" />
      <Folder Include="Assets/Modules/Items/Runtime" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
