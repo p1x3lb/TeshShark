@@ -134,7 +134,7 @@ namespace Project.Scripts.Infrastructure
         public void OnPointerUp(PointerEventData eventData)
         {
 #if !UNITY_EDITOR
-              if (Input.touches.Length != 0) return;
+              if (Input.touches.Length <= 1) return;
 #endif
 
             if (!_selecting) return;

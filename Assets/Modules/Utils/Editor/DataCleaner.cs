@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.IO;
 using UnityEditor;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace Utils.Project.Scripts.Modules.Utils.Editor
             DeletePersistentDirectory("");
             PlayerPrefs.DeleteAll();
         }
-        
+
         [MenuItem("DEV/Open persistent folder")]
         public static void OpenPersistentFolder()
         {
@@ -30,3 +31,4 @@ namespace Utils.Project.Scripts.Modules.Utils.Editor
         }
     }
 }
+#endif

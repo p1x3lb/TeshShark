@@ -1,9 +1,13 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using Leopotam.Ecs.UnityIntegration;
+#endif
+
+using System;
 using System.Collections.Generic;
 using Leopotam.Ecs;
-using Leopotam.Ecs.UnityIntegration;
 using Project.Scripts.Infrastructure;
 using Zenject;
+
 
 namespace Project.Scripts.Core
 {

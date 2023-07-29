@@ -50,7 +50,6 @@
      <Compile Include="Assets/Modules/Utils/Pool/PoolItem.cs" />
      <Compile Include="Assets/Modules/Utils/Editor/StartUpStarter.cs" />
      <Compile Include="Assets/Modules/Utils/Pool/ObjectPoolItem.cs" />
-     <Compile Include="Assets/Modules/Utils/Editor/ReadOnly.cs" />
      <Compile Include="Assets/Modules/Utils/UI/LayoutListUtil/LayoutListPool.cs" />
      <Compile Include="Assets/Modules/Utils/UI/Lable/LeadingLabele.cs" />
      <Compile Include="Assets/Modules/Utils/InRangeWatcher/IInRangeObservable.cs" />

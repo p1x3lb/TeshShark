@@ -11,7 +11,7 @@ namespace Project.Scripts.Infrastructure
         [SerializeReference]
         private List<IComponent> _components;
 
-        [SerializeField, ReadOnly]
+        [SerializeField]
         private int _id;
 
         private IECSManager _ecsManager;
