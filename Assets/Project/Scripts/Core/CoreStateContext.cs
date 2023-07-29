@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using GameStateMachine.Modules.GameStateMachine;
 using Project.Scripts.Infrastructure;
 using Zenject;
@@ -15,8 +16,10 @@ namespace Project.Scripts.Core
         [Inject]
         private LevelListConfig LevelListConfig { get; }
 
+
         public LevelConfig Level => LevelListConfig.GetLevel(PlayerModel.PlayerLevel);
         public int StepsLeft { get; set; }
+        public List<CellView> _cells;
 
         public void Initialize()
         {
