@@ -33,7 +33,7 @@ MonoBehaviour:
       _sprite: {fileID: 21300000, guid: 27119816db256420d8a8c5f405fac7c6, type: 3}
     _goalConfigs:
     - rid: 3086543117832159234
-  - _stepCount: 10
+  - _stepCount: 12
     _speed: 3
     _damage: 1
     _columns: 6
@@ -43,9 +43,9 @@ MonoBehaviour:
       _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159235
-  - _stepCount: 15
-    _speed: 5
-    _damage: 2
+  - _stepCount: 6
+    _speed: 3
+    _damage: 1
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 5ffdb3789d4d04cc3b41b2ef288ff730, type: 3}
@@ -53,7 +53,7 @@ MonoBehaviour:
       _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159245
-  - _stepCount: 8
+  - _stepCount: 12
     _speed: 3
     _damage: 1
     _columns: 6
@@ -63,8 +63,8 @@ MonoBehaviour:
       _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159237
-  - _stepCount: 12
-    _speed: 4
+  - _stepCount: 15
+    _speed: 3
     _damage: 2
     _columns: 6
     _rows: 6
@@ -87,7 +87,7 @@ MonoBehaviour:
     - rid: 3086543117832159243
   - _stepCount: 12
     _speed: 3
-    _damage: 1
+    _damage: 2
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: d93666ac8ac9449e193bf2136cc60ba6, type: 3}
@@ -97,7 +97,7 @@ MonoBehaviour:
     - rid: 6973238671088549892
   - _stepCount: 8
     _speed: 3
-    _damage: 1
+    _damage: 2
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: ee4a5295017a84bd1b1f718e4acfd783, type: 3}
@@ -117,6 +117,7 @@ MonoBehaviour:
       _sprite: {fileID: 21300000, guid: 1e5a17246b1044d62b0c3e9aae84050f, type: 3}
     _goalConfigs:
     - rid: 3086543117832159244
+    - rid: 6973238671088549893
   references:
     version: 2
     RefIds:
@@ -176,3 +177,7 @@ MonoBehaviour:
       type: {class: BarrelGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
         _toDefeat: 4
+    - rid: 6973238671088549893
+      type: {class: TentaklGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
+      data:
+        _toDefeat: 8

@@ -20,7 +20,7 @@ MonoBehaviour:
     _sprite: {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
   - _goal: LemurContent
     _cellContent: {fileID: 6599756664826574034, guid: 3d339e80bf29347649b1e33dc9e87c4b, type: 3}
-    _sprite: {fileID: 0}
+    _sprite: {fileID: 5093018952733246788, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
   - _goal: TorchContent
     _cellContent: {fileID: 8919752093910184772, guid: 1a5734f0776aa43759b15491ca2026d7, type: 3}
     _sprite: {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
@@ -30,3 +30,6 @@ MonoBehaviour:
   - _goal: BarrelContent
     _cellContent: {fileID: 4722927389090998838, guid: a2f72841b741146f18611802083f573c, type: 3}
     _sprite: {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
+  - _goal: TentataklContent
+    _cellContent: {fileID: 7709285505898038980, guid: 5d3449aee291c45ed884fba3515b250f, type: 3}
+    _sprite: {fileID: 21300000, guid: c43b0ae79f954e0469ff8ee1fd468104, type: 3}
