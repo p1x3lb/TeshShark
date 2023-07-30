@@ -98,6 +98,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 07b814658df605f4eaff4899707f20a4, type: 3}
   - {fileID: 21300000, guid: ee214d75e9567914596a3314546f92ff, type: 3}
   - {fileID: 21300000, guid: fa2213a5c6a269c49a993c84985c3678, type: 3}
+  - {fileID: 21300000, guid: 499f4de5438173f4d90d2095fffd4531, type: 3}
   - {fileID: 21300000, guid: 27119816db256420d8a8c5f405fac7c6, type: 3}
   - {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
   - {fileID: 21300000, guid: 3dcb4046b7efb924dafee6ceb453bd01, type: 3}
@@ -145,6 +146,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 16fbb93d3229d0044a512254ad95843c, type: 3}
   - {fileID: 21300000, guid: 81eacf3d9b92d9a43af3b50c0902f21b, type: 3}
   - {fileID: 21300000, guid: 64c5b97d9d58402b8e5e6aeb72d4f844, type: 3}
+  - {fileID: 21300000, guid: f6d2e28dfb46fed489af18fe7fc07ed3, type: 3}
   - {fileID: 21300000, guid: d6601e9d92d9b2d42805babfdf5fc722, type: 3}
   - {fileID: 21300000, guid: a25ee7bddc5714bc3aae7351c3dcfad2, type: 3}
   - {fileID: 21300000, guid: 32f35d0e8d7e1304c832f835bff36326, type: 3}
@@ -194,6 +196,7 @@ SpriteAtlas:
   - mask_03
   - art_3
   - particle_ray_single_03
+  - arrow_hod_highlight
   - text_2
   - Pirate_Ship_Left_Down
   - popup
@@ -241,6 +244,7 @@ SpriteAtlas:
   - panel_quests
   - particle_dot_soft_00
   - particle_cannon_ball_01
+  - arrow_hod_glow
   - moves
   - fx_transition_spark
   - button_green_big
