@@ -284,7 +284,7 @@ namespace Project.Scripts.Infrastructure
 
                 foreach (var cell in CoreStateContext.CellsEnumerable.Except(points).Where(cell => cell.Content != null && cell.IsClose(points[i])))
                 {
-                    ship.Process(cell);
+                    await ship.Process(cell);
                 }
             }
 
