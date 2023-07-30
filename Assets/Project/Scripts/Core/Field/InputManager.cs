@@ -156,7 +156,7 @@ namespace Project.Scripts.Infrastructure
         private async UniTask ProcessTurn(ShipContent ship, List<CellView> points)
         {
             IsLocked = true;
-            
+
             ship.ToggleHighlight(false);
 
             await ProcessPlayerStep(ship, points);
