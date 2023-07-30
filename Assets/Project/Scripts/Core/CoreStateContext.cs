@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 using GameStateMachine.Modules.GameStateMachine;
 using Project.Scripts.Features;
 using Project.Scripts.Infrastructure;
@@ -10,7 +11,7 @@ using Zenject;
 
 namespace Project.Scripts.Core
 {
-    public class CoreStateContext : IGameStateContext
+    public class CoreStateContext : IGameStateContext, IDisposable
     {
         public event Action<int> TurnsChanged;
 
@@ -26,12 +27,17 @@ namespace Project.Scripts.Core
         [Inject]
         private LevelListConfig LevelListConfig { get; }
 
+        [Inject]
+        private GoalsManager GoalsManager { get; }
+
         public LevelConfig Level => LevelListConfig.GetLevel(PlayerModel.PlayerLevel);
         public int StepsLeft { get; private set; }
         public CellView[,] Cells { get; private set; }
         public Transform Map { get; set; }
         public int Speed => Level.Speed;
         public int Damage => Level.Damage;
+
+        public bool IsLocked { get; set; }
 
         public IEnumerable<CellView> CellsEnumerable
         {
@@ -65,19 +71,51 @@ namespace Project.Scripts.Core
             }
 
             StepsLeft = Level.StepCount;
+
+            GoalsManager.Win += OnGoalsManaerWin;
+        }
+
+        public void Dispose()
+        {
+            GoalsManager.Win -= OnGoalsManaerWin;
+        }
+
+        private void OnGoalsManaerWin()
+        {
+            PlayerModel.CompleteLevel();
+            PlayWinFlow().Forget();
+        }
+
+        private async UniTask PlayWinFlow()
+        {
+            IsLocked = true;
+            await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
+            WindowManager.ShowWindow<WinWindow>(new WinWindowModel());
+            IsLocked = false;
         }
 
         public bool ApplyTurn(int turns)
         {
+            if (StepsLeft <= 0)
+                return false;
+
             StepsLeft -= turns;
             TurnsChanged?.Invoke(StepsLeft);
             if (StepsLeft <= 0)
             {
-                WindowManager.ShowWindow<TryAgainWindow>(new TryAgainWindowModel(this));
+                PlayLoseFlow().Forget();
                 return false;
             }
 
             return true;
+        }
+
+        private async UniTask PlayLoseFlow()
+        {
+            IsLocked = true;
+            await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
+            IsLocked = false;
+            WindowManager.ShowWindow<TryAgainWindow>(new TryAgainWindowModel(this));
         }
     }
 }

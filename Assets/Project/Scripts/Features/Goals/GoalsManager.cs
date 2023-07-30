@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 using Project.Scripts.Features;
 using Project.Scripts.Infrastructure;
 using UI;
@@ -9,6 +11,8 @@ namespace Project.Scripts.Core
 {
     public class GoalsManager
     {
+        public event Action Win;
+
         [Inject]
         private PlayerModel PlayerModel { get; }
 
@@ -32,8 +36,7 @@ namespace Project.Scripts.Core
         {
             if (ActiveGoals.All(goal => goal.IsCompleted))
             {
-                PlayerModel.CompleteLevel();
-                WindowManager.ShowWindow<WinWindow>(new WinWindowModel());
+                Win?.Invoke();
             }
         }
 

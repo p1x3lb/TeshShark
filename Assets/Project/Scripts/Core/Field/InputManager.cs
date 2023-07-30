@@ -109,7 +109,7 @@ namespace Project.Scripts.Infrastructure
 #if !UNITY_EDITOR
             if (Input.touches.Length != 1) return;
 #endif
-            if (IsLocked) return;
+            if (IsLocked || CoreStateContext.IsLocked) return;
 
             var screenToWorldPoint = _camera.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y));
             var size = Physics2D.RaycastNonAlloc(screenToWorldPoint, Vector2.zero, _results);
