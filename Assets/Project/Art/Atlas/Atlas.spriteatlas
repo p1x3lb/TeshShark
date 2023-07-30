@@ -66,6 +66,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: af987e10ca3f0924488070b1a9d5c330, type: 3}
   - {fileID: 21300000, guid: ba2d593024e409d449b07f1cda370034, type: 3}
   - {fileID: 21300000, guid: 52f2c2c03fc3a1444bae74f2adf1c419, type: 3}
   - {fileID: 21300000, guid: 5e53b3113aadd33478597e4e3a30abb1, type: 3}
@@ -89,6 +90,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e99f78445160ab64e9ae54ee08c26bdc, type: 3}
   - {fileID: 21300000, guid: 2f25368449fe35f42bc13fcf477462d4, type: 3}
   - {fileID: 21300000, guid: 64f13eb4d14d52f45a75c9e741dbbf8e, type: 3}
+  - {fileID: 21300000, guid: ac6bf4c48cb973f47b52b2474dab4414, type: 3}
   - {fileID: 21300000, guid: 8440a265ef97c2e428fada3418a1c977, type: 3}
   - {fileID: 21300000, guid: 07b814658df605f4eaff4899707f20a4, type: 3}
   - {fileID: 21300000, guid: ee214d75e9567914596a3314546f92ff, type: 3}
@@ -125,11 +127,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1091b63bc6e8941c1b590c01f02d86e7, type: 3}
   - {fileID: 21300000, guid: d420d14bb8c01ba438ac11e3ec083ca8, type: 3}
   - {fileID: 21300000, guid: 34d649ab568277543bd670aea22f23ba, type: 3}
+  - {fileID: 21300000, guid: a7e7140c46f70f94c8f43dcf6dada97b, type: 3}
   - {fileID: 21300000, guid: f81782acb010978469828ed1f96f46b7, type: 3}
   - {fileID: 21300000, guid: 182acabc85b859646ba16bc302dc1ab4, type: 3}
   - {fileID: -636393489822427593, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
   - {fileID: 21300000, guid: 2facae2d10daf8c4599b9075ca52ff91, type: 3}
   - {fileID: 21300000, guid: 16fbb93d3229d0044a512254ad95843c, type: 3}
+  - {fileID: 21300000, guid: 81eacf3d9b92d9a43af3b50c0902f21b, type: 3}
   - {fileID: 21300000, guid: 64c5b97d9d58402b8e5e6aeb72d4f844, type: 3}
   - {fileID: 21300000, guid: d6601e9d92d9b2d42805babfdf5fc722, type: 3}
   - {fileID: 21300000, guid: a25ee7bddc5714bc3aae7351c3dcfad2, type: 3}
@@ -147,6 +151,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c35388cf60ef7e64ebb34b8c276bf262, type: 3}
   - {fileID: 21300000, guid: 87aa54ffb57a8ef45aadaf8d0bc4bcd1, type: 3}
   m_PackedSpriteNamesToIndex:
+  - grad_blue_02
   - shadow_text
   - x
   - UI_effect_dotSmall
@@ -170,6 +175,7 @@ SpriteAtlas:
   - progressbar
   - particle_star_glow_16
   - MagicLine
+  - particle_spark_square_00_1
   - UI_effect_rays2
   - mask_03
   - art_3
@@ -206,11 +212,13 @@ SpriteAtlas:
   - panel_transition_slice_progress_background
   - button_shared_slice_mask
   - zastavka
+  - logo
   - progressbar_bg
   - close
   - Layer 0
   - UI_panel_Ring
   - panel_quests
+  - particle_dot_soft_00
   - particle_cannon_ball_01
   - moves
   - fx_transition_spark
