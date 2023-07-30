@@ -2,7 +2,7 @@ using System;
 
 namespace Project.Scripts.Core
 {
-    public class BarrelContent : CellContent
+    public class BarrelContent : BonusContent
     {
         public static event Action Destroyed;
 
@@ -10,8 +10,8 @@ namespace Project.Scripts.Core
 
         public override void OnEnter()
         {
+            base.OnEnter();
             Destroyed?.Invoke();
-            Destroy(gameObject);
         }
     }
 }

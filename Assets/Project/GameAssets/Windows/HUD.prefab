@@ -707,6 +707,7 @@ MonoBehaviour:
   _levelText: {fileID: 2062800876}
   _damageText: {fileID: 8594659586717715772}
   _turnsText: {fileID: 239999861}
+  _animator: {fileID: 1407800217869972149}
 --- !u!1 &7861370303146630734
 GameObject:
   m_ObjectHideFlags: 0

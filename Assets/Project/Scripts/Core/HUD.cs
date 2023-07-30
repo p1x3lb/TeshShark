@@ -51,6 +51,9 @@ namespace Project.Scripts.Core
         [SerializeField]
         private TextMeshProUGUI _turnsText;
 
+        [SerializeField]
+        private Animator _animator;
+
         private readonly List<GoalListItem> _goalList = new List<GoalListItem>();
 
         [UsedImplicitly]
@@ -92,6 +95,7 @@ namespace Project.Scripts.Core
         private void OnTurnsChanged(int count)
         {
             _turnsText.text = count.ToString();
+            _animator.SetTrigger("Hit");
         }
     }
 }
