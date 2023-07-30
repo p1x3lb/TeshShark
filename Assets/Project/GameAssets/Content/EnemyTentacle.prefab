@@ -46,12 +46,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc2cf02b8b64d7a995d509379678f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _directionView: {fileID: 0}
   _swimDuration: 0.3
   _counter: {fileID: 7220414554260597635}
   _counterGO: {fileID: 2741675656260214915}
   _health: 4
   _speed: 1
   _damage: 1
+  _animator: {fileID: 6061602820202175299}
+  _cannonBall: {fileID: 0}
+  _cannonShot: {fileID: 0}
 --- !u!1 &1149669447214780015
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,15 +694,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -328246731476802659, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 1.5280986
+      value: 1.5280983
       objectReference: {fileID: 0}
     - target: {fileID: -328246731476802659, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 0.605
+      value: 0.60499996
       objectReference: {fileID: 0}
     - target: {fileID: -328246731476802659, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 1.6248201
+      value: 1.6248199
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}

@@ -66,6 +66,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 54e32600604812e4395b30e8c80ee30f, type: 3}
   - {fileID: 21300000, guid: af987e10ca3f0924488070b1a9d5c330, type: 3}
   - {fileID: 21300000, guid: ba2d593024e409d449b07f1cda370034, type: 3}
   - {fileID: 21300000, guid: 52f2c2c03fc3a1444bae74f2adf1c419, type: 3}
@@ -83,6 +84,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2dfbc7924129adb44ae35e4b39f59fcb, type: 3}
   - {fileID: 21300000, guid: cfb934c2a19aff340bca7a35fef2251f, type: 3}
   - {fileID: 21300000, guid: 26c2d9f217ea8f74583f4a4b9a8952d7, type: 3}
+  - {fileID: 21300000, guid: 308ccd137e0041a45bab8386771c1692, type: 3}
   - {fileID: 21300000, guid: 6f1cf583e0b516b44bec174fabad10fa, type: 3}
   - {fileID: 21300000, guid: 298d3c838bf34980ad2e24b24a978188, type: 3}
   - {fileID: 21300000, guid: 5d0a4893c856a3449903cbe298cb7d07, type: 3}
@@ -101,6 +103,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3dcb4046b7efb924dafee6ceb453bd01, type: 3}
   - {fileID: 21300000, guid: 44b3856635df3a94ca1d49244e915b19, type: 3}
   - {fileID: 21300000, guid: 217f92961d5d34760b3a7e4913c01d1f, type: 3}
+  - {fileID: 21300000, guid: b6caa99686eb9cc408dc806d62059406, type: 3}
   - {fileID: 21300000, guid: 55ecac174979c8c40be3e5a1df661973, type: 3}
   - {fileID: 21300000, guid: c2a5696777171bf47a2b8c7b0e7b8b51, type: 3}
   - {fileID: 21300000, guid: 289b2f97f140e4784a7488f135c8c7f3, type: 3}
@@ -115,6 +118,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4f18d519337e14fba819d50ea3b4603c, type: 3}
   - {fileID: 21300000, guid: b0411a29f1de0a74f8a85f805644344e, type: 3}
   - {fileID: 21300000, guid: 2d5978496af5a0349b37a6b02f049832, type: 3}
+  - {fileID: 21300000, guid: 9b03c769604142c428bb267ce0ddb5da, type: 3}
   - {fileID: 6536131472477687951, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 5652618372114322917, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 1889153371149406131, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
@@ -125,7 +129,9 @@ SpriteAtlas:
   - {fileID: -8240647025263012317, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
   - {fileID: 21300000, guid: 1a373a5ae445348c1945a20c52eecebc, type: 3}
   - {fileID: 21300000, guid: 8b4df4caafd655b4eb9794afaf20923d, type: 3}
+  - {fileID: 21300000, guid: bebe61daaa2673e4e970da5a5e111a42, type: 3}
   - {fileID: 21300000, guid: 5d66fdfa76cfbd8419aaa5a71203a18b, type: 3}
+  - {fileID: 21300000, guid: b6352efaeffe8a540b7fd9c65a7cc272, type: 3}
   - {fileID: 21300000, guid: 1091b63bc6e8941c1b590c01f02d86e7, type: 3}
   - {fileID: 21300000, guid: d420d14bb8c01ba438ac11e3ec083ca8, type: 3}
   - {fileID: 21300000, guid: 34d649ab568277543bd670aea22f23ba, type: 3}
@@ -133,6 +139,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a7e7140c46f70f94c8f43dcf6dada97b, type: 3}
   - {fileID: 21300000, guid: f81782acb010978469828ed1f96f46b7, type: 3}
   - {fileID: 21300000, guid: 182acabc85b859646ba16bc302dc1ab4, type: 3}
+  - {fileID: 21300000, guid: 334512dc6dc7ae140a7632c8ba860f4b, type: 3}
   - {fileID: -636393489822427593, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
   - {fileID: 21300000, guid: 2facae2d10daf8c4599b9075ca52ff91, type: 3}
   - {fileID: 21300000, guid: 16fbb93d3229d0044a512254ad95843c, type: 3}
@@ -155,6 +162,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c35388cf60ef7e64ebb34b8c276bf262, type: 3}
   - {fileID: 21300000, guid: 87aa54ffb57a8ef45aadaf8d0bc4bcd1, type: 3}
   m_PackedSpriteNamesToIndex:
+  - panel_quest_slice_tooltip_arrow
   - grad_blue_02
   - shadow_text
   - x
@@ -172,6 +180,7 @@ SpriteAtlas:
   - button
   - button_shared_slice_greenmain_grey
   - art
+  - panel_quest_slice_tooltip_back_frame
   - x_hod
   - particle_smoke_08
   - particle_star_glow_02
@@ -190,6 +199,7 @@ SpriteAtlas:
   - popup
   - art_2
   - panel_transition_gradient
+  - panel_quest_slice_tooltip_back
   - button_2
   - button_shared_slice_greenmain
   - bochka_water
@@ -204,6 +214,7 @@ SpriteAtlas:
   - panel_transition_slice_progress_foreground
   - Rock01
   - Shoreline01
+  - panel_quest_frame
   - Ship_Left_Up
   - Ship_Left_Down
   - Ship_Up
@@ -214,7 +225,9 @@ SpriteAtlas:
   - eyelid_left
   - icon_shared_greencheck (1)
   - wave
+  - icon_quest_tooltip_arrow
   - Glow
+  - panel_quest_background
   - panel_transition_slice_progress_background
   - button_shared_slice_mask
   - zastavka
@@ -222,6 +235,7 @@ SpriteAtlas:
   - logo
   - progressbar_bg
   - close
+  - fx_add
   - Layer 0
   - UI_panel_Ring
   - panel_quests

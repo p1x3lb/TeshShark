@@ -1,4 +1,6 @@
 using System;
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -22,6 +24,15 @@ namespace Project.Scripts.Core
 
         [SerializeField]
         private int _damage = 1;
+
+        [SerializeField]
+        private Animator _animator;
+
+        [SerializeField]
+        private Transform _cannonBall;
+
+        [SerializeField]
+        private GameObject _cannonShot;
 
         public int Health => _health;
         public override bool IsWalkable => false;
@@ -57,6 +68,24 @@ namespace Project.Scripts.Core
         public void DestroyShip()
         {
             Destroy(gameObject);
+        }
+
+        public async UniTask ShowDmg(Transform target)
+        {
+            if (_animator == null)
+            {
+                _cannonBall.gameObject.SetActive(true);
+                _cannonShot.SetActive(true);
+                _cannonBall.transform.position = transform.position;
+                await _cannonBall.DOJump(target.position, 1, 1, 0.25f).SetEase(Ease.InOutQuad).ToUniTask();
+                _cannonBall.gameObject.SetActive(false);
+                _cannonShot.SetActive(false);
+            }
+            else
+            {
+                _animator.SetTrigger("Attack");
+                await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
+            }
         }
     }
 }
