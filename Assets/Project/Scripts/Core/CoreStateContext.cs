@@ -90,7 +90,7 @@ namespace Project.Scripts.Core
         {
             IsLocked = true;
             await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
-            if (PlayerModel.PlayerLevel == LevelListConfig.LevelCount - 1)
+            if (PlayerModel.PlayerLevel == LevelListConfig.LevelCount)
             {
                 WindowManager.ShowWindow<FinishWindow>(new FinishWindowModel());
             }
