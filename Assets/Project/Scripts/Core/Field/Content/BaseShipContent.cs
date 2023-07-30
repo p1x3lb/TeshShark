@@ -24,7 +24,7 @@ namespace Project.Scripts.Core
 
         public void SetDirection(Vector2 vector)
         {
-            _directionView.Apply(vector);
+            _directionView?.Apply(vector);
         }
     }
 }
