@@ -35,8 +35,8 @@ namespace Project.Scripts.Core
         {
             if (ActiveGoals.All(goal => goal.IsCompleted))
             {
-                return true;
                 Win?.Invoke();
+                return true;
             }
 
             return false;
