@@ -1,6 +1,7 @@
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using GameStateMachine.Project.Scripts.Modules.GameStateMachine;
+using Project.Scripts.Features;
 using Project.Scripts.Infrastructure;
 using UI;
 using UnityEngine;
@@ -39,6 +40,11 @@ namespace Project.Scripts.Core
             GoalsManager.Initialize(context.Level.Goals);
 
             WindowManager.ShowWindow<HUD>(new HUDModel(context));
+
+            if (context.Level.Suggest != null && context.Level.Suggest.Sprite != null)
+            {
+                WindowManager.ShowWindow<SuggestWindow>(new SuggestWindowModel(context.Level.Suggest, context));
+            }
         }
 
         public void Dispose()

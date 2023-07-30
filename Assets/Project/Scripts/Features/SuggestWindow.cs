@@ -4,16 +4,17 @@ using Project.Scripts.Core;
 using TMPro;
 using UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Project.Scripts.Features
 {
     [Serializable]
     public class Suggest
     {
+        [SerializeField]
+        private Sprite _sprite;
 
-
-
-        public string Text { get; }
+        public Sprite Sprite => _sprite;
     }
 
     public class SuggestWindowModel : WindowModel
@@ -28,14 +29,14 @@ namespace Project.Scripts.Features
         }
     }
 
-    public class SuggestionsWindow : Window<SuggestWindowModel>
+    public class SuggestWindow : Window<SuggestWindowModel>
     {
         [SerializeField]
-        private TMP_Text _text;
+        private Image _image;
 
         protected override UniTask OnShow()
         {
-            _text.text = Model.Suggest.Text;
+            _image.sprite = Model.Suggest.Sprite;
             Model.Context.TurnsChanged += OnChanged;
             return base.OnShow();
         }

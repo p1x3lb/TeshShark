@@ -86,6 +86,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6f1cf583e0b516b44bec174fabad10fa, type: 3}
   - {fileID: 21300000, guid: 298d3c838bf34980ad2e24b24a978188, type: 3}
   - {fileID: 21300000, guid: 5d0a4893c856a3449903cbe298cb7d07, type: 3}
+  - {fileID: 21300000, guid: 1e5a17246b1044d62b0c3e9aae84050f, type: 3}
   - {fileID: 21300000, guid: 30ca59348fce00e45bf0e697b59f3351, type: 3}
   - {fileID: 21300000, guid: e99f78445160ab64e9ae54ee08c26bdc, type: 3}
   - {fileID: 21300000, guid: 2f25368449fe35f42bc13fcf477462d4, type: 3}
@@ -95,6 +96,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 07b814658df605f4eaff4899707f20a4, type: 3}
   - {fileID: 21300000, guid: ee214d75e9567914596a3314546f92ff, type: 3}
   - {fileID: 21300000, guid: fa2213a5c6a269c49a993c84985c3678, type: 3}
+  - {fileID: 21300000, guid: 27119816db256420d8a8c5f405fac7c6, type: 3}
   - {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
   - {fileID: 21300000, guid: 3dcb4046b7efb924dafee6ceb453bd01, type: 3}
   - {fileID: 21300000, guid: 44b3856635df3a94ca1d49244e915b19, type: 3}
@@ -127,6 +129,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1091b63bc6e8941c1b590c01f02d86e7, type: 3}
   - {fileID: 21300000, guid: d420d14bb8c01ba438ac11e3ec083ca8, type: 3}
   - {fileID: 21300000, guid: 34d649ab568277543bd670aea22f23ba, type: 3}
+  - {fileID: 21300000, guid: 035b08cb8ab3e4954a9b9a4f5ba674ee, type: 3}
   - {fileID: 21300000, guid: a7e7140c46f70f94c8f43dcf6dada97b, type: 3}
   - {fileID: 21300000, guid: f81782acb010978469828ed1f96f46b7, type: 3}
   - {fileID: 21300000, guid: 182acabc85b859646ba16bc302dc1ab4, type: 3}
@@ -172,6 +175,7 @@ SpriteAtlas:
   - x_hod
   - particle_smoke_08
   - particle_star_glow_02
+  - text_3
   - inner_panel_quests
   - progressbar
   - particle_star_glow_16
@@ -181,6 +185,7 @@ SpriteAtlas:
   - mask_03
   - art_3
   - particle_ray_single_03
+  - text_2
   - Pirate_Ship_Left_Down
   - popup
   - art_2
@@ -213,6 +218,7 @@ SpriteAtlas:
   - panel_transition_slice_progress_background
   - button_shared_slice_mask
   - zastavka
+  - text_1
   - logo
   - progressbar_bg
   - close

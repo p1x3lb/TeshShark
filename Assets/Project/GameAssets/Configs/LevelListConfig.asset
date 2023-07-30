@@ -19,6 +19,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: d80972733543c4e2195f84a9b785b792, type: 3}
+    _suggest:
+      _sprite: {fileID: 21300000, guid: 035b08cb8ab3e4954a9b9a4f5ba674ee, type: 3}
     _goalConfigs:
     - rid: 3086543117832159233
   - _stepCount: 15
@@ -27,6 +29,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 7fc8173a9fda544a38453ffea9b3c2ca, type: 3}
+    _suggest:
+      _sprite: {fileID: 21300000, guid: 27119816db256420d8a8c5f405fac7c6, type: 3}
     _goalConfigs:
     - rid: 3086543117832159234
   - _stepCount: 15
@@ -35,6 +39,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 22fd7decbbc2f46ee970b6ee5e0014f8, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159235
   - _stepCount: 15
@@ -43,6 +49,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: ee4a5295017a84bd1b1f718e4acfd783, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159240
     - rid: 3086543117832159241
@@ -53,6 +61,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: d93666ac8ac9449e193bf2136cc60ba6, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159236
   - _stepCount: 15
@@ -61,6 +71,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 37f9f155a3e7943ca82b3069f50e5567, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159237
   - _stepCount: 15
@@ -69,6 +81,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 0dedc7d475ff14144a71f2b5b63b515d, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159238
     - rid: 3086543117832159239
@@ -78,6 +92,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 6fb514cb0a02848aeaf3b68a7d7c35d2, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117426098182
     - rid: 3086543117832159243
@@ -87,6 +103,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: 5ffdb3789d4d04cc3b41b2ef288ff730, type: 3}
+    _suggest:
+      _sprite: {fileID: 0}
     _goalConfigs:
     - rid: 3086543117832159245
   - _stepCount: 15
@@ -95,6 +113,8 @@ MonoBehaviour:
     _columns: 6
     _rows: 6
     _mapPrefab: {fileID: 470819381467398998, guid: aaa26f89359ae4760934e80255cab7a7, type: 3}
+    _suggest:
+      _sprite: {fileID: 21300000, guid: 1e5a17246b1044d62b0c3e9aae84050f, type: 3}
     _goalConfigs:
     - rid: 3086543117832159244
   references:

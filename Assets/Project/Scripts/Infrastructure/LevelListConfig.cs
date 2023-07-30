@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.Core;
+using Project.Scripts.Features;
 using UnityEngine;
 
 namespace Project.Scripts.Infrastructure
@@ -38,6 +39,9 @@ namespace Project.Scripts.Infrastructure
         [SerializeField]
         private GameObject _mapPrefab;
 
+        [SerializeField]
+        private Suggest _suggest;
+
         [SerializeReference]
         private List<IGoal> _goalConfigs = new();
 
@@ -49,5 +53,6 @@ namespace Project.Scripts.Infrastructure
         public IReadOnlyList<IGoal> Goals => _goalConfigs;
         public int Rows => _rows;
         public int Columns => _columns;
+        public Suggest Suggest => _suggest;
     }
 }
