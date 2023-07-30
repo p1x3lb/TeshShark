@@ -159,9 +159,13 @@ namespace Project.Scripts.Infrastructure
 
             CoreStateContext.ApplyTurn(1);
 
+            ship.ToggleHighlight(false);
+
             await ProcessPlayerStep(ship, points);
             await ProcessShipsStep();
             await ProcessSpawnStep();
+
+            ship.ToggleHighlight(true);
 
             IsLocked = false;
         }

@@ -1,3 +1,4 @@
+using UnityEngine;
 using Zenject;
 
 namespace Project.Scripts.Core
@@ -6,6 +7,9 @@ namespace Project.Scripts.Core
     {
         [Inject]
         private CoreStateContext CoreStateContext { get; }
+
+        [SerializeField]
+        private Animator _animator;
 
         public override bool IsWalkable => true;
 
@@ -21,6 +25,11 @@ namespace Project.Scripts.Core
                     }
                     break;
             }
+        }
+
+        public void ToggleHighlight(bool isHighlighted)
+        {
+            _animator?.SetBool("IsHighlighted", isHighlighted);
         }
     }
 }
