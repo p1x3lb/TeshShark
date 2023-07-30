@@ -231,9 +231,13 @@ namespace Project.Scripts.Infrastructure
                     cell.SetContent(null);
                     endCell.SetContent(enemyShipContent);
                 }
+                else
+                {
+                    endCell = cell;
+                }
 
                 var ship = CoreStateContext.CellsEnumerable.FirstOrDefault(cell => cell.Content is ShipContent);
-                if (ship != null && ship.Content is ShipContent shipContent && (endCell == null || ship.IsClose(endCell)))
+                if (ship != null && ship.Content is ShipContent shipContent && ship.IsClose(endCell))
                 {
                     await enemyShipContent.ShowDmg(shipContent.transform);
                     if (!CoreStateContext.ApplyTurn(enemyShipContent.Damage))
