@@ -55,41 +55,49 @@ namespace Project.Scripts.Core.Field
             if (vector == Vector2.up)
             {
                 ApplyView(Directions.Up);
+                return;
             }
 
             if (vector == Vector2.down)
             {
                 ApplyView(Directions.Down);
+                return;
             }
 
             if (vector == Vector2.right)
             {
                 ApplyView(Directions.Right);
+                return;
             }
 
             if (vector == Vector2.left)
             {
                 ApplyView(Directions.Left);
+                return;
             }
 
             if (vector.x > 0 && vector.y > 0)
             {
                 ApplyView(Directions.UpRight);
+                return;
             }
 
             if (vector.x > 0 && vector.y < 0)
             {
                 ApplyView(Directions.DownRight);
+                return;
             }
 
             if (vector.x < 0 && vector.y > 0)
             {
                 ApplyView(Directions.UpLeft);
+                return;
             }
 
             if (vector.x < 0 && vector.y < 0)
             {
                 ApplyView(Directions.DownLeft);
+                return;
             }
 
             ApplyView(Directions.Current);
@@ -104,7 +112,8 @@ namespace Project.Scripts.Core.Field
 
             var dir = _directions.Find(x => x.Direction1 == direction);
             dir.View.SetActive(true);
-            Transform.localScale = new Vector3((dir.FlipX ? -1 : 1) * Mathf.Abs(Transform.localScale.x), (dir.FlipY ? -1 : 1) *  Mathf.Abs(Transform.localScale.y), Transform.localScale.z);
+            var scale = Transform.localScale;
+            Transform.localScale = new Vector3((dir.FlipX ? -1 : 1) * Mathf.Abs(scale.x), (dir.FlipY ? -1 : 1) *  Mathf.Abs(scale.y), scale.z);
         }
     }
 }

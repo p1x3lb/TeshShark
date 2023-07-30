@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7336923305ad4b96b76c5aca9d28ac67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _directionView: {fileID: 6645669048160774961}
+  _directionView: {fileID: 8004698216799366434}
   _swimDuration: 0.3
 --- !u!1 &595083671789565077
 GameObject:
@@ -142,6 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5472151874106529493}
   - component: {fileID: 7929188465716594638}
+  - component: {fileID: 8004698216799366434}
   m_Layer: 0
   m_Name: AnimRoot
   m_TagString: Untagged
@@ -185,6 +186,55 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &8004698216799366434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012393880353551804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed737914241b4397918ec242a5db10c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _directions:
+  - _direction: 3
+    _view: {fileID: 1399154776420130779}
+    _flipX: 0
+    _flipY: 0
+  - _direction: 4
+    _view: {fileID: 2122658655877077806}
+    _flipX: 0
+    _flipY: 0
+  - _direction: 1
+    _view: {fileID: 9155463831288649269}
+    _flipX: 0
+    _flipY: 0
+  - _direction: 2
+    _view: {fileID: 9155463831288649269}
+    _flipX: 1
+    _flipY: 0
+  - _direction: 8
+    _view: {fileID: 7210069233049097871}
+    _flipX: 1
+    _flipY: 0
+  - _direction: 6
+    _view: {fileID: 9107216934457316344}
+    _flipX: 1
+    _flipY: 0
+  - _direction: 7
+    _view: {fileID: 7210069233049097871}
+    _flipX: 0
+    _flipY: 0
+  - _direction: 5
+    _view: {fileID: 9107216934457316344}
+    _flipX: 0
+    _flipY: 0
+  - _direction: 0
+    _view: {fileID: 9155463831288649269}
+    _flipX: 0
+    _flipY: 0
 --- !u!1001 &7403022332674948943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -464,60 +514,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -303461517042801567, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   m_PrefabInstance: {fileID: 7403022332674948943}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7015234145483824882 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
-  m_PrefabInstance: {fileID: 7403022332674948943}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6645669048160774961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7015234145483824882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed737914241b4397918ec242a5db10c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _directions:
-  - _direction: 3
-    _view: {fileID: 1399154776420130779}
-    _flipX: 0
-    _flipY: 0
-  - _direction: 4
-    _view: {fileID: 2122658655877077806}
-    _flipX: 0
-    _flipY: 0
-  - _direction: 1
-    _view: {fileID: 9155463831288649269}
-    _flipX: 0
-    _flipY: 0
-  - _direction: 2
-    _view: {fileID: 9155463831288649269}
-    _flipX: 1
-    _flipY: 0
-  - _direction: 8
-    _view: {fileID: 7210069233049097871}
-    _flipX: 1
-    _flipY: 0
-  - _direction: 6
-    _view: {fileID: 9107216934457316344}
-    _flipX: 1
-    _flipY: 0
-  - _direction: 7
-    _view: {fileID: 7210069233049097871}
-    _flipX: 0
-    _flipY: 0
-  - _direction: 5
-    _view: {fileID: 9107216934457316344}
-    _flipX: 0
-    _flipY: 0
-  - _direction: 0
-    _view: {fileID: 9155463831288649269}
-    _flipX: 0
-    _flipY: 0
 --- !u!1 &7210069233049097871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9028698749122975296, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
