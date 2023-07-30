@@ -1,6 +1,6 @@
-using System.Linq;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using Project.Scripts.Core.Field;
 using UnityEngine;
 using Zenject;
 
@@ -16,6 +16,9 @@ namespace Project.Scripts.Core
 
         [SerializeField]
         private CellContent _cellContent;
+
+        [SerializeField]
+        private DirectionView _directionView;
 
         public bool Walkable => _cellContent?.IsWalkable ?? true;
         public bool IsSelectable => _cellContent is ShipContent;
@@ -48,6 +51,7 @@ namespace Project.Scripts.Core
 
         public void SetNext(CellView selectable)
         {
+            _directionView.Apply(selectable != null ? (selectable.Position - Position).normalized : Vector2.zero);
         }
 
         public async UniTask Travel(BaseShipContent ship, CancellationToken cancellationToken)

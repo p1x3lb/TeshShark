@@ -69,6 +69,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ba2d593024e409d449b07f1cda370034, type: 3}
   - {fileID: 21300000, guid: 52f2c2c03fc3a1444bae74f2adf1c419, type: 3}
   - {fileID: 21300000, guid: 5e53b3113aadd33478597e4e3a30abb1, type: 3}
+  - {fileID: 21300000, guid: 2140e141567da934998931aae5b23120, type: 3}
   - {fileID: 21300000, guid: bd74e481d2b7fdb4e9879f2547492725, type: 3}
   - {fileID: 21300000, guid: d0424b811c763324993f8675fe7b32c7, type: 3}
   - {fileID: 6536131472477687951, guid: b7f1aff164283a1458805bdc3164f0fe, type: 3}
@@ -82,6 +83,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cfb934c2a19aff340bca7a35fef2251f, type: 3}
   - {fileID: 21300000, guid: 26c2d9f217ea8f74583f4a4b9a8952d7, type: 3}
   - {fileID: 21300000, guid: 6f1cf583e0b516b44bec174fabad10fa, type: 3}
+  - {fileID: 21300000, guid: 298d3c838bf34980ad2e24b24a978188, type: 3}
   - {fileID: 21300000, guid: 5d0a4893c856a3449903cbe298cb7d07, type: 3}
   - {fileID: 21300000, guid: 30ca59348fce00e45bf0e697b59f3351, type: 3}
   - {fileID: 21300000, guid: e99f78445160ab64e9ae54ee08c26bdc, type: 3}
@@ -128,6 +130,7 @@ SpriteAtlas:
   - {fileID: -636393489822427593, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
   - {fileID: 21300000, guid: 2facae2d10daf8c4599b9075ca52ff91, type: 3}
   - {fileID: 21300000, guid: 16fbb93d3229d0044a512254ad95843c, type: 3}
+  - {fileID: 21300000, guid: 64c5b97d9d58402b8e5e6aeb72d4f844, type: 3}
   - {fileID: 21300000, guid: d6601e9d92d9b2d42805babfdf5fc722, type: 3}
   - {fileID: 21300000, guid: a25ee7bddc5714bc3aae7351c3dcfad2, type: 3}
   - {fileID: 21300000, guid: 32f35d0e8d7e1304c832f835bff36326, type: 3}
@@ -147,6 +150,7 @@ SpriteAtlas:
   - shadow_text
   - x
   - UI_effect_dotSmall
+  - particle_grass_01
   - Water_tile
   - bg_fon
   - Ship_Left_Up
@@ -160,6 +164,7 @@ SpriteAtlas:
   - button_shared_slice_greenmain_grey
   - art
   - x_hod
+  - particle_smoke_08
   - particle_star_glow_02
   - inner_panel_quests
   - progressbar
@@ -206,6 +211,7 @@ SpriteAtlas:
   - Layer 0
   - UI_panel_Ring
   - panel_quests
+  - particle_cannon_ball_01
   - moves
   - fx_transition_spark
   - button_green_big

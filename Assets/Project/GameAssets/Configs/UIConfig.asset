@@ -20,7 +20,7 @@ MonoBehaviour:
   - _window: WinWindow
     _prefab: {fileID: 7365660197155170711, guid: 7049717c7b0ff4b5b94428736d460551, type: 3}
   - _window: LoseWindow
-    _prefab: {fileID: 7365660197155170711, guid: 07826aa887eb34f95b6feaf8d82c7fe3, type: 3}
+    _prefab: {fileID: 7365660197155170711, guid: 9dec3bb3630b84e9fba88896d5b6e4c3, type: 3}
   - _window: HUD
     _prefab: {fileID: 7365660197155170711, guid: fca075b2a17e241cd8d04397d6fa993a, type: 3}
   - _window: ExitWindow

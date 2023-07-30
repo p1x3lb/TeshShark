@@ -80,6 +80,7 @@ namespace Project.Scripts.Infrastructure
                         selectable.Select();
                         _selected.Add(selectable);
                         _lastSelected = selectable;
+                        _lastSelected.SetNext(null);
                         RouteUpdated?.Invoke(_selected.Count - 1);
                     }
 
@@ -217,11 +218,11 @@ namespace Project.Scripts.Infrastructure
                 {
                     cell.SetContent(null);
                     endCell.SetContent(enemyShipContent);
+                }
 
-                    if (CoreStateContext.Cells[column, row].IsClose(endCell) && !CoreStateContext.ApplyTurn(enemyShipContent.Damage))
-                    {
-                        break;
-                    }
+                if ((endCell == null || CoreStateContext.Cells[column, row].IsClose(endCell)) && !CoreStateContext.ApplyTurn(enemyShipContent.Damage))
+                {
+                    break;
                 }
             }
         }

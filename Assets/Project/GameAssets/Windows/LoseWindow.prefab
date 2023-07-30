@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 1826099190433013029}
   - component: {fileID: 4736159547837726595}
   m_Layer: 0
-  m_Name: LoseWindow 1
+  m_Name: LoseWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
