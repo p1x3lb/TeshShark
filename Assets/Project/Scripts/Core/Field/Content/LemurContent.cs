@@ -8,7 +8,7 @@ namespace Project.Scripts.Core
 
         public override bool IsWalkable => true;
 
-        public override void OnRemoved()
+        public override void OnEnter()
         {
             Destroyed?.Invoke();
             Destroy(gameObject);

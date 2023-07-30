@@ -101,6 +101,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c2a5696777171bf47a2b8c7b0e7b8b51, type: 3}
   - {fileID: 21300000, guid: 289b2f97f140e4784a7488f135c8c7f3, type: 3}
   - {fileID: 21300000, guid: 2f5b1cd7012e5e24ab86277e533f1a1b, type: 3}
+  - {fileID: 21300000, guid: c43b0ae79f954e0469ff8ee1fd468104, type: 3}
   - {fileID: 21300000, guid: 2c15661881424e34ab99e1eedab66eb7, type: 3}
   - {fileID: 21300000, guid: 7f98d0289331648d2b8d4fcb81030336, type: 3}
   - {fileID: 21300000, guid: d618cd3824d490e4da23a4a65976674f, type: 3}
@@ -115,7 +116,11 @@ SpriteAtlas:
   - {fileID: 1889153371149406131, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 4116740544798490017, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
   - {fileID: 2480869727787867055, guid: ecc27b1a6f3c0a84097408bac32d4ba1, type: 3}
+  - {fileID: -8496991598460773827, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
+  - {fileID: 5093018952733246788, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
+  - {fileID: -8240647025263012317, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
   - {fileID: 21300000, guid: 1a373a5ae445348c1945a20c52eecebc, type: 3}
+  - {fileID: 21300000, guid: 8b4df4caafd655b4eb9794afaf20923d, type: 3}
   - {fileID: 21300000, guid: 5d66fdfa76cfbd8419aaa5a71203a18b, type: 3}
   - {fileID: 21300000, guid: 1091b63bc6e8941c1b590c01f02d86e7, type: 3}
   - {fileID: 21300000, guid: d420d14bb8c01ba438ac11e3ec083ca8, type: 3}
@@ -132,6 +137,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7888d1defeb254d128d2b991e0405674, type: 3}
   - {fileID: 21300000, guid: d12e4dee443a3ae44bd994ac154a28f5, type: 3}
   - {fileID: 21300000, guid: 8a3d5dfe177915b4a87816559acc4e52, type: 3}
+  - {fileID: 21300000, guid: 64cc832f9514ec4449eca718f52d5170, type: 3}
   - {fileID: 21300000, guid: 1942b83f35b7b434485af650c020ead9, type: 3}
   - {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
   - {fileID: 21300000, guid: 26bfa1bff3297d84d90f028ca18791b7, type: 3}
@@ -173,6 +179,7 @@ SpriteAtlas:
   - button_shared_slice_greenmain
   - bochka_water
   - inner_panel_quests_counter
+  - _0003_Tentacle2
   - heart
   - grape
   - particle_ray_single
@@ -187,7 +194,11 @@ SpriteAtlas:
   - Ship_Up
   - Ship_Down
   - Ship_Left
+  - eyelid_right
+  - Layer 1
+  - eyelid_left
   - icon_shared_greencheck (1)
+  - wave
   - Glow
   - panel_transition_slice_progress_background
   - button_shared_slice_mask
@@ -204,6 +215,7 @@ SpriteAtlas:
   - majak
   - Rock02
   - particle_star_glow_17
+  - _0001_Tentacle1
   - art_4
   - butilka
   - bg_lvl

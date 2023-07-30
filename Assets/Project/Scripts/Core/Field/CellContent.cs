@@ -15,5 +15,10 @@ namespace Project.Scripts.Core
         {
 
         }
+
+        public virtual void OnEnter()
+        {
+
+        }
     }
 }

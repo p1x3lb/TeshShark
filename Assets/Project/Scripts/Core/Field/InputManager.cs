@@ -134,7 +134,7 @@ namespace Project.Scripts.Infrastructure
         public void OnPointerUp(PointerEventData eventData)
         {
 #if !UNITY_EDITOR
-              if (Input.touches.Length <= 1) return;
+              //if (Input.touches.Length <= 1) return;
 #endif
 
             if (!_selecting) return;
@@ -274,6 +274,7 @@ namespace Project.Scripts.Infrastructure
             {
                 points[i].Clear();
                 await points[i].Travel(ship, _cancellationTokenSource.Token);
+                points[i].Content?.OnEnter();
                 points[i].SetContent(null);
 
                 foreach (var cell in CoreStateContext.CellsEnumerable.Except(points).Where(cell => cell.Content != null && cell.IsClose(points[i])))
