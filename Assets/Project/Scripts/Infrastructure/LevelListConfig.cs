@@ -12,6 +12,8 @@ namespace Project.Scripts.Infrastructure
         [SerializeField]
         private LevelConfig[] _levels;
 
+        public int LevelCount => _levels.Length;
+
         public LevelConfig GetLevel(int index)
         {
             return _levels.Length == 0 ? null : _levels[index % _levels.Length];
