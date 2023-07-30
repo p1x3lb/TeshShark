@@ -21,8 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WaterWaveFullAdditive_01
-  m_Shader: {fileID: -6465566751694194690, guid: ec7ead5b8585a564fb95c97078c9ae50,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: ec7ead5b8585a564fb95c97078c9ae50, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -64,9 +63,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_70DEAE95: -0.1
-    - Vector1_96EEBA35: 0.6
-    - Vector1_DF685A49: 1
+    - Vector1_70DEAE95: -0.2
+    - Vector1_96EEBA35: 1
+    - Vector1_DF685A49: 0.97
     - _DistortionStrength: 0.6
     - _EnableExternalAlpha: 0
     - _QueueControl: 0
@@ -74,9 +73,9 @@ Material:
     - _Speed: -0.1
     - _YScale: 1
     m_Colors:
-    - Vector2_B9357DFF: {r: 2, g: 2, b: 0, a: 0}
+    - Vector2_B9357DFF: {r: 0.5, g: 2, b: 0, a: 0}
     - Vector2_D530BA69: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 1, b: 1, a: 0.7058824}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseScale: {r: 2, g: 2, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
