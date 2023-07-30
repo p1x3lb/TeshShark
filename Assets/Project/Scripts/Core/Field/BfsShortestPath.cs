@@ -22,7 +22,11 @@ namespace Project.Scripts.Core.Field
 
         private bool IsWalkable(int row, int col)
         {
-            return IsValid(row, col) && grid[row, col].Walkable;
+            return IsValid(row, col) && grid[row, col].Walkable &&
+                   grid[row, col].Content is not TorchContent &&
+                   grid[row, col].Content is not BarrelContent &&
+                   grid[row, col].Content is not LemurContent &&
+                   grid[row, col].Content is not FoodContent;
         }
 
         public List<(int, int)> FindShortestPath(int startRow, int startCol, int targetRow, int targetCol)
