@@ -23,7 +23,7 @@ MonoBehaviour:
     _sprite: {fileID: 5093018952733246788, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
   - _goal: TorchContent
     _cellContent: {fileID: 8919752093910184772, guid: 1a5734f0776aa43759b15491ca2026d7, type: 3}
-    _sprite: {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
+    _sprite: {fileID: 21300000, guid: 7888d1defeb254d128d2b991e0405674, type: 3}
   - _goal: FoodContent
     _cellContent: {fileID: 4395939260882135558, guid: 409479143c1e9424f89a737bdc096836, type: 3}
     _sprite: {fileID: 21300000, guid: 7f98d0289331648d2b8d4fcb81030336, type: 3}

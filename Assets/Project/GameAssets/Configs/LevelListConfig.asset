@@ -124,7 +124,7 @@ MonoBehaviour:
     - rid: 3086543117426098182
       type: {class: EnemyGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
-        _toDefeat: 4
+        _toDefeat: 6
     - rid: 3086543117832159233
       type: {class: LemurGoal, ns: Project.Scripts.Core.Goals, asm: Assembly-CSharp}
       data:
