@@ -142,6 +142,7 @@ SpriteAtlas:
   - {fileID: 8042414116384660336, guid: 9cfb625ed8622944fb1f7197521a1700, type: 3}
   - {fileID: 21300000, guid: e5f05eae3e56a5c4abd0769e83b976c3, type: 3}
   - {fileID: 21300000, guid: 7888d1defeb254d128d2b991e0405674, type: 3}
+  - {fileID: 21300000, guid: f49b7bde705bf4240945ad0527340cd1, type: 3}
   - {fileID: 21300000, guid: d12e4dee443a3ae44bd994ac154a28f5, type: 3}
   - {fileID: 21300000, guid: 8a3d5dfe177915b4a87816559acc4e52, type: 3}
   - {fileID: 21300000, guid: 64cc832f9514ec4449eca718f52d5170, type: 3}
@@ -227,6 +228,7 @@ SpriteAtlas:
   - Layer 0
   - Ship_Left_Down
   - majak
+  - pushka
   - Rock02
   - particle_star_glow_17
   - Tentacle1
