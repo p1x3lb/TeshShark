@@ -17,19 +17,19 @@ MonoBehaviour:
   _contents:
   - _goal: EnemyShipContent
     _cellContent: {fileID: 1630571670706502425, guid: d8f701520ad184009aad8c39d984e8e2, type: 3}
-    _sprite: {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
+    _sprite: {fileID: 21300000, guid: ac96cdf9d2ad8451baca3cdc64595580, type: 3}
   - _goal: LemurContent
     _cellContent: {fileID: 6599756664826574034, guid: 3d339e80bf29347649b1e33dc9e87c4b, type: 3}
-    _sprite: {fileID: 5093018952733246788, guid: 96d87c4a0d3ed594083082383bb399dc, type: 3}
+    _sprite: {fileID: 21300000, guid: 2cc89870bdf96453e8a6780f72b90f7d, type: 3}
   - _goal: TorchContent
     _cellContent: {fileID: 8919752093910184772, guid: 1a5734f0776aa43759b15491ca2026d7, type: 3}
-    _sprite: {fileID: 21300000, guid: 7888d1defeb254d128d2b991e0405674, type: 3}
+    _sprite: {fileID: 21300000, guid: 0c5ea9be0c9bf4f52adcba1944a0c8d0, type: 3}
   - _goal: FoodContent
     _cellContent: {fileID: 4395939260882135558, guid: 409479143c1e9424f89a737bdc096836, type: 3}
-    _sprite: {fileID: 21300000, guid: 7f98d0289331648d2b8d4fcb81030336, type: 3}
+    _sprite: {fileID: 21300000, guid: 554a4a46e24f84f67b423b73cbd65a3c, type: 3}
   - _goal: BarrelContent
     _cellContent: {fileID: 4722927389090998838, guid: a2f72841b741146f18611802083f573c, type: 3}
-    _sprite: {fileID: 21300000, guid: aeb11eaf8e3e9436b81a0c943f68be6c, type: 3}
+    _sprite: {fileID: 21300000, guid: 5ea76d0360fde436988ccf8f722b0660, type: 3}
   - _goal: TentataklContent
     _cellContent: {fileID: 7709285505898038980, guid: 5d3449aee291c45ed884fba3515b250f, type: 3}
-    _sprite: {fileID: 21300000, guid: c43b0ae79f954e0469ff8ee1fd468104, type: 3}
+    _sprite: {fileID: 21300000, guid: 29817da80eea34953a61e07a52f34a27, type: 3}

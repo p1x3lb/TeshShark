@@ -27,17 +27,19 @@ namespace Project.Scripts.Core
             {
                 var goal = goalConfig.Produce();
                 goal.Initialize();
-                goal.Complete += OnGoalComplete;
                 ActiveGoals.Add(goal);
             }
         }
 
-        private void OnGoalComplete(GoalModel obj)
+        public bool Check()
         {
             if (ActiveGoals.All(goal => goal.IsCompleted))
             {
+                return true;
                 Win?.Invoke();
             }
+
+            return false;
         }
 
         public void Clear()
