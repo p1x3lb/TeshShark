@@ -83,7 +83,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 26c2d9f217ea8f74583f4a4b9a8952d7, type: 3}
   - {fileID: 21300000, guid: 6f1cf583e0b516b44bec174fabad10fa, type: 3}
   - {fileID: 21300000, guid: 5d0a4893c856a3449903cbe298cb7d07, type: 3}
-  - {fileID: 21300000, guid: d3d5f7340d52e25458d29d3a34020a2e, type: 3}
   - {fileID: 21300000, guid: 30ca59348fce00e45bf0e697b59f3351, type: 3}
   - {fileID: 21300000, guid: e99f78445160ab64e9ae54ee08c26bdc, type: 3}
   - {fileID: 21300000, guid: 2f25368449fe35f42bc13fcf477462d4, type: 3}
@@ -94,7 +93,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fa2213a5c6a269c49a993c84985c3678, type: 3}
   - {fileID: 21300000, guid: 5b7c0126130f60649b9cb58a51b1569b, type: 3}
   - {fileID: 21300000, guid: 3dcb4046b7efb924dafee6ceb453bd01, type: 3}
-  - {fileID: 21300000, guid: efcfdf5686842ad4bb8a027b9ad38b9e, type: 3}
   - {fileID: 21300000, guid: 44b3856635df3a94ca1d49244e915b19, type: 3}
   - {fileID: 21300000, guid: 217f92961d5d34760b3a7e4913c01d1f, type: 3}
   - {fileID: 21300000, guid: 55ecac174979c8c40be3e5a1df661973, type: 3}
@@ -127,12 +125,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 34d649ab568277543bd670aea22f23ba, type: 3}
   - {fileID: 21300000, guid: f81782acb010978469828ed1f96f46b7, type: 3}
   - {fileID: 21300000, guid: 182acabc85b859646ba16bc302dc1ab4, type: 3}
+  - {fileID: -636393489822427593, guid: 88ce470d0d03a954f9120852cffc18c3, type: 3}
   - {fileID: 21300000, guid: 2facae2d10daf8c4599b9075ca52ff91, type: 3}
   - {fileID: 21300000, guid: 16fbb93d3229d0044a512254ad95843c, type: 3}
   - {fileID: 21300000, guid: d6601e9d92d9b2d42805babfdf5fc722, type: 3}
   - {fileID: 21300000, guid: a25ee7bddc5714bc3aae7351c3dcfad2, type: 3}
   - {fileID: 21300000, guid: 32f35d0e8d7e1304c832f835bff36326, type: 3}
   - {fileID: 21300000, guid: fa4e453ea923f3d4280b7f23f442d95d, type: 3}
+  - {fileID: 8042414116384660336, guid: 9cfb625ed8622944fb1f7197521a1700, type: 3}
   - {fileID: 21300000, guid: e5f05eae3e56a5c4abd0769e83b976c3, type: 3}
   - {fileID: 21300000, guid: 7888d1defeb254d128d2b991e0405674, type: 3}
   - {fileID: 21300000, guid: d12e4dee443a3ae44bd994ac154a28f5, type: 3}
@@ -161,7 +161,6 @@ SpriteAtlas:
   - art
   - x_hod
   - particle_star_glow_02
-  - image_transition_logo
   - inner_panel_quests
   - progressbar
   - particle_star_glow_16
@@ -172,14 +171,13 @@ SpriteAtlas:
   - particle_ray_single_03
   - Pirate_Ship_Left_Down
   - popup
-  - image_transition_background
   - art_2
   - panel_transition_gradient
   - button_2
   - button_shared_slice_greenmain
   - bochka_water
   - inner_panel_quests_counter
-  - _0003_Tentacle2
+  - Tentacle2
   - heart
   - grape
   - particle_ray_single
@@ -205,17 +203,19 @@ SpriteAtlas:
   - zastavka
   - progressbar_bg
   - close
+  - Layer 0
   - UI_panel_Ring
   - panel_quests
   - moves
   - fx_transition_spark
   - button_green_big
   - panel_transition_progress_fill
+  - Layer 0
   - Ship_Left_Down
   - majak
   - Rock02
   - particle_star_glow_17
-  - _0001_Tentacle1
+  - Tentacle1
   - art_4
   - butilka
   - bg_lvl
