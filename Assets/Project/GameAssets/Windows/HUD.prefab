@@ -837,6 +837,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8594659587506907808, guid: 28e8b62c068634d76bc1874387cd5e37, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f49b7bde705bf4240945ad0527340cd1, type: 3}
+    - target: {fileID: 8594659587506907839, guid: 28e8b62c068634d76bc1874387cd5e37, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 184
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594659587506907839, guid: 28e8b62c068634d76bc1874387cd5e37, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 183
+      objectReference: {fileID: 0}
     - target: {fileID: 8594659588023901338, guid: 28e8b62c068634d76bc1874387cd5e37, type: 3}
       propertyPath: m_Maskable
       value: 0

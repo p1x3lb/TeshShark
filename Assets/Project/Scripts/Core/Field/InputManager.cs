@@ -157,12 +157,16 @@ namespace Project.Scripts.Infrastructure
         {
             IsLocked = true;
 
-            CoreStateContext.ApplyTurn(1);
-
+            var result = CoreStateContext.ApplyTurn(1);
             ship.ToggleHighlight(false);
 
             await ProcessPlayerStep(ship, points);
-            await ProcessShipsStep();
+
+            if (result)
+            {
+                await ProcessShipsStep();
+            }
+
             await ProcessSpawnStep();
 
             ship.ToggleHighlight(true);
@@ -190,7 +194,8 @@ namespace Project.Scripts.Infrastructure
                                Mathf.Abs(range.y) <= ContentListConfig.MaxRange;
                     });
 
-                    var content = CoreStateContext.Container.InstantiatePrefabForComponent<CellContent>(ContentListConfig.GetContent(spawnableGoal.ContentType).CellContent, cell.Position, Quaternion.identity, CoreStateContext.Map);
+                    var content = CoreStateContext.Container.InstantiatePrefabForComponent<CellContent>(
+                        ContentListConfig.GetContent(spawnableGoal.ContentType).CellContent, cell.Position, Quaternion.identity, CoreStateContext.Map);
                     cell.SetContent(content);
                 }
             }
