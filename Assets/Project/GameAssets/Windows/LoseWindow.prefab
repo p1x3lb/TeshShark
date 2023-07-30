@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6610406751068523043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3117089212210822478, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 322
+      value: 338
       objectReference: {fileID: 0}
     - target: {fileID: 3192075000040275727, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_Pivot.x
@@ -440,29 +440,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Body
       objectReference: {fileID: 0}
+    - target: {fileID: 8291130709361191505, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291130709361191505, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1217
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309366320148954237, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4619fa7d351244c4aa82cc7bc229af4f, type: 3}
     - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_fontSize
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.7079922
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.7079922
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.8113208
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_fontSizeBase
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 7674dc91de932b542a762a122399aa5b, type: 2}
+    - target: {fileID: 8586942238716266245, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4290098639
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8854129877786081445, guid: ee9a87125b2c4425fa17a2246a916b76, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
