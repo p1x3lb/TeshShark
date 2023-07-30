@@ -194,8 +194,11 @@ namespace Project.Scripts.Infrastructure
                                Mathf.Abs(range.y) <= ContentListConfig.MaxRange;
                     });
 
+                    if (cell == null) continue;
+
                     var content = CoreStateContext.Container.InstantiatePrefabForComponent<CellContent>(
                         ContentListConfig.GetContent(spawnableGoal.ContentType).CellContent, cell.Position, Quaternion.identity, CoreStateContext.Map);
+
                     cell.SetContent(content);
                 }
             }
