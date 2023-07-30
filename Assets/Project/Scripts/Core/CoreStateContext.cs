@@ -96,9 +96,6 @@ namespace Project.Scripts.Core
 
         public bool ApplyTurn(int turns)
         {
-            if (StepsLeft <= 0)
-                return false;
-
             StepsLeft -= turns;
             TurnsChanged?.Invoke(StepsLeft);
             if (StepsLeft <= 0)
